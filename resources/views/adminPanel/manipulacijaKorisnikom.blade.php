@@ -29,14 +29,10 @@
                 <select name="statusKorisnika" >
                     <option class="unutrasnjiOption" value="">Sve statusi</option>
                     <option class="unutrasnjiOption" value=0>Regularni status</option>
-                    <option class="unutrasnjiOption" value=1>Admin status</option>
+                    <option class="unutrasnjiOption" value=2>Moderator status</option>
                 </select>
                 <x-form-error name='statusKorisnika' />
                 
-                <div class="potvradaDodavanjaKorisnika" id="potvrdaDodatKorisnik" style="display: {{ session('uspesno_dodavanje_korisnika') ? 'block' : 'none' }};">
-                    <h2 class="por">Uspešno ste dodali korisnika</h2>
-                    <p clas="spot">Svi podaci su ispravno uneseni <strong>{{ session('uspesno_dodavanje_korisnika') }}</strong></p>
-                </div>
                 <button type="submit" form="dodajKorisnika">Dodaj korisnika</button>
             </form>
         </div>
@@ -77,10 +73,22 @@
                         <h2 class="por">Uspešno ste obrisali korisnika</h2>
                         <p clas="spot">Korisnik: <strong>{{ session('uspesno_obrisan_korinsik') }}</strong></p>
                     </div>
-                    <button type="submit" form="brisanjeKorisnika">Odaberite korisnika</button>
+                    <button type="submit" form="brisanjeKorisnika">Obriši korisnika</button>
                 </form>
                 
             </div>
         </div>
     </div>
+    <article>
+        <div id="porukeUspehPopUp"  class="popup {{ session('porukaUspeh') != null ? 'show' : '' }}">
+            <div class="popup-content" style="background-color: rgb(89 133 199 / 49%);">
+                @if(session('porukaUspeh') != null)
+               <div class="obavestenjeUspeha">
+                    <h2 class="por">{{ session('porukaUspeh')["naslov"]}}</h2>
+                    <p class="spot"><strong>{{ session('porukaUspeh')["poruka"]}}</strong></p>
+                </div>
+                @endif
+            </div>
+        </div>
+    </article>
 </x-adminKartuce>

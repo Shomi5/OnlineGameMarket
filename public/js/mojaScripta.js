@@ -13,11 +13,16 @@ function kupiIgricu()
 {
     var $pomeriAtribut = document.getElementById("kupiIgru");
     var $formaSkoloni = document.getElementById("formaKupi");
+    var $opisIgre = document.getElementById("opisIgre");
+    var $stanje = document.getElementById("stanje");
 
   if($formaSkoloni.classList.contains("hidden")){
       $formaSkoloni.classList.remove("hidden");
      $pomeriAtribut.classList.add("hidden");
+     $opisIgre.classList.add("hidden");
+     $stanje.classList.add("hidden");
   }
+
  
 }
 
@@ -42,7 +47,7 @@ function proveri(event){
         }, 3000);
     }
     else{
-        errorPoruka.innerHTML = "Pogresan unešen broj racuna";
+        errorPoruka.innerHTML = "Pogresan unešen broj racuna (XX-XXXXXXXX-XX)";
         errorPoruka.classList.remove("hidden");
         event.preventDefault();
 
@@ -99,6 +104,14 @@ window.addEventListener('load', function() {
   }
 });
 
+window.addEventListener('load', function() {
+  const potvrdaEditIgre = document.getElementById("potvrdaEditovanaIgra");
+  if (potvrdaEditIgre) {
+      setTimeout(function() {
+        potvrdaEditIgre.style.display = "none";
+      }, 3000); // Sakrij poruku nakon 3 sekunde
+  }
+});
 
 
 

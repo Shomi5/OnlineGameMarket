@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
 
-class AdminAutorizacija
+class AdminModeratorAutorizacija
 {
     /**
      * Handle an incoming request.
@@ -20,7 +20,7 @@ class AdminAutorizacija
             return redirect("/login");
         }
 
-        if(Auth::user()->status == 0 || Auth::user()->status == 2)
+        if(Auth::user()->status == 0)
         {
             return redirect("userAccount");
         }

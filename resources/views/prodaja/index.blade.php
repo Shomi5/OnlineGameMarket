@@ -80,7 +80,6 @@
     </div>
     <article class="container">
         <div class="row">
-
             <div class="col-md-12">
                 {{-- <div>
                     <h1 id="dimenzijeEkrana" style="color: white">Video igre</h1>
@@ -105,33 +104,74 @@
                         @endforeach
                     </div>
                     @auth
-                        @if (Auth::user()->status)
-                        <div class="kreirajIgru">
-                            <a href="/adminPanel/upravljanjeVideoIgrama" class="text-white text-decoration-none">
-                                <div class="plusic">
+                        @if (Auth::user()->status == 1)
+                            <div class="kreirajIgru">
+                                <a href="/adminPanel/upravljanjeVideoIgrama" class="text-white text-decoration-none">
+                                    <div class="plusic">
 
-                                    <i class="bi bi-plus"></i>
+                                        <i class="bi bi-plus"></i>
 
-                                </div>
-                            </a>
-                        </div>
+                                    </div>
+                                </a>
+                            </div>
                         @endif
                     @endauth
                 </div>
             </div>
         </div>
     </article>
+    @if($omoguceneRezervacije != null)
+    <article>
+        <div id="popupOverlay" class="popup {{ $Cookie == 1 ? 'show' : '' }}">
+            <div class="popup-content" style="background-color: rgb(89 133 199 / 49%);">
+                <div class="userTable">
+                    <div class="table-wrapper">
+                        <div class="naruciOkvirPopUp">
+                            @if($omoguceneRezervacije->count() > 1)
+                            <h3>Vaše narudžbine su dostupe</h3>
+                            @else
+                            <h3>Vaša narudžina je dostupna</h3>
+                            @endif
+
+                            <div class="pozicijaKartica {{ $omoguceneRezervacije->count() == 1? "klasaCentar":"" }}">
+                                @if (!$omoguceneRezervacije->isEmpty())
+                                    @foreach ($omoguceneRezervacije as $rezerv)
+                                        <div class="unutraTabelePop">
+                                            <a href="/prodaja/{{ $rezerv->Naziv }}">
+
+                                                <div class="unutraSekcije">
+                                                    <img src="{{ asset('images/slikeIgara/' . $rezerv->Naziv . '.jpg') }}"
+                                                        alt="...">
+                                                </div>
+                                                <div class="unutraSekcije"><p>{{ $rezerv->Naziv }}</p></div>
+                                                <div class="unutraSekcije"><p>{{ $rezerv->Cena_Igre }} Rsd</p></div>
+                                            </a>
+
+
+                                        </div>
+                                    @endforeach
+                                @endif
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </article>
+    @endif
     <br>
     <br>
     <footer class="d-flex flex-wrap justify-content-between align-items-center px-5  border-top">
         <div class="col-md-4 d-flex align-items-center">
-          <span class="mb-3 mb-md-0">© 2025 Miloš Savić | milossavic199@gmial.com</span>
+            <span class="mb-3 mb-md-0">© 2025 Miloš Savić | milossavic199@gmial.com</span>
         </div>
-    
+
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-body" href="#"><i class="bi bi-twitter"></i></a></li>
-          <li class="ms-3"><a class="text-body" href="#"><i class="bi bi-instagram"></i></a></li>
-          <li class="ms-3"><a class="text-body" href="#"><i class="bi bi-facebook"></i></a></li>
+            <li class="ms-3"><a class="text-body" href="#"><i class="bi bi-twitter"></i></a></li>
+            <li class="ms-3"><a class="text-body" href="#"><i class="bi bi-instagram"></i></a></li>
+            <li class="ms-3"><a class="text-body" href="#"><i class="bi bi-facebook"></i></a></li>
         </ul>
-      </footer>
+    </footer>
 </x-layout>

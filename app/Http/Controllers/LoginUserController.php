@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
+use Illuminate\Support\Facades\Cookie;
 
 class LoginUserController extends Controller
 {
@@ -35,6 +36,7 @@ class LoginUserController extends Controller
 
     public function destroy()
     {
+        Cookie::queue(Cookie::forget('brojac_poseta'));
         Auth::logout();
 
         return redirect("/");

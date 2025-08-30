@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'openai' =>[
+        'laravel_key' => env('OPENAI_API_KEY')
+    ]
+
 ];

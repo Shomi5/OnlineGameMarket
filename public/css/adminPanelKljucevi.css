@@ -1,0 +1,274 @@
+.unosKljuceva {
+    display: flex;
+    gap: 5px;
+}
+
+.unosKljuceva button {
+    margin-top: 0px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.naslovPanelaKljuceva {
+    margin: 20px 0px;
+    color: white;
+    text-shadow: 0px 2px 2px black;
+    text-align: center;
+}
+
+
+.errorKljuceva {
+    color: #861919;
+    font-weight: bold;
+    text-shadow: 0px 0px 4px rgb(0, 0, 0);
+}
+
+.successKljuceva {
+    color: #4b9e1b;
+    font-weight: bold;
+    text-shadow: 0px 0px 4px rgb(0, 0, 0);
+}
+
+.uspeh {
+    color: #4b9e1b;
+
+}
+
+.neuspeh {
+    color: #861919;
+}
+
+.neispravan {
+    color: #c0b518;
+}
+
+.uspeh,
+.neuspeh,
+.neispravan {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.svgIkonice {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.potvdaKljucevaOsnova {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.bazaDugmeta {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.bazaSelecta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.bazaSelecta label {
+    width: 25%;
+    color: white;
+    text-shadow: 0px 2px 2px black;
+}
+
+.formKljucevi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.formKljucevi button {
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.formKljucevi button:hover {
+    background-color: #19af21;
+    /* Neutralna tamnija pozadina */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6),
+        -2px -2px 5px rgba(255, 255, 255, 0.2);
+
+
+}
+
+.formKljucevi select {
+    width: 100%;
+    border-radius: 5px;
+    color: #ffffff;
+    text-shadow: 0px 2px 2px black;
+    padding: 2px;
+    padding-left: 8px;
+    border: none;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+}
+
+.prikazStanja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    text-shadow: 0px 0px 2px black;
+}
+
+.celijeStatusa {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.userTable2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 0.5px;
+    width: 100%;
+}
+
+.potvdaKljucevaOsnova .prikazStanja,
+.prikazKljuceva {
+    display: flex;
+    flex: 0 0 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.slikaKljucevi img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px 0px;
+    box-shadow: 0px 0px 10px 2px black;
+    filter: brightness(100%);
+}
+
+
+.obavestenjeUspeha h2 {
+    color: rgb(63, 179, 63);
+}
+
+.obavestenjeUspeha p {
+    color: white;
+}
+
+.obradaNarudzbine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+
+.naslovNarudzbe h3 {
+    color: white;
+    text-shadow: 0px 2px 2px black;
+}
+
+.prikazNarudzbine {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    color: white;
+    width: 100%;
+    flex-direction: column;
+    text-shadow: 0px 0px 5px black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0px;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6), inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+}
+
+.naruzbinaOdustani {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.naruzbinaOdustani a {
+    width: 100%;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.naruzbinaOdustani a:hover {
+    background-color: #971515;
+    /* Neutralna tamnija pozadina */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6),
+        -2px -2px 5px rgba(214, 36, 36, 0.2);
+
+
+}
+
+.uzmiKljucIgre {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uzmiKljucIgre a {
+    width: 100%;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.uzmiKljucIgre a:hover {
+    background-color: #0f9e1b;
+    /* Neutralna tamnija pozadina */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6),
+        -2px -2px 5px rgba(10, 143, 55, 0.2);
+
+
+}

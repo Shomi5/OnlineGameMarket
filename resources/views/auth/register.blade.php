@@ -7,7 +7,7 @@
             @csrf
 
             <div class="naslov">
-                <h1>Register</h1>
+                <h1>Napravite Vaš nalog</h1>
                 <hr>
             </div>
             <label for="Ime">Ime:</label>
@@ -26,20 +26,20 @@
                 placeholder="vas_e-mail@gmail.com" required></input>
             <x-form-error name='email' />
 
-            <label for="password">Password:</label>
+            <label for="password">Šifra:</label>
 
             <input type="password" name="password" id="password" placeholder="Unesite šifru po želji" required></input>
             <x-form-error name='password' />
 
 
 
-            <label for="password_confirmation">Confirm Password:</label>
+            <label for="password_confirmation">Ponovite šifru:</label>
             <input type="password" name="password_confirmation" id="password_confirmation"
                 placeholder="Ponovite željinu šifru" required></input>
             <x-form-error name='password_confirmation' />
             <div class="dugmeRegister">
-                <a class="text-center" type="button" href="/">Cancel</a>
-                <button type="submit">Register</button>
+                <a class="text-center" type="button" href="/">Odustani</a>
+                <button type="submit">Pristupite nalogu</button>
             </div>
 
         </form>

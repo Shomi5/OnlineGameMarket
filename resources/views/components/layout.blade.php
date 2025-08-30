@@ -10,6 +10,8 @@
     <title>Game Vault</title>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{{ asset('css/popUpCss.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/tabela2.css') }}">
     <link rel="stylesheet" href="{{ asset('css/myStyle.css') }}">
 </head>
 
@@ -27,9 +29,10 @@
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                                <x-nav-link href="/" :active="request()->is('/')"  >Home</x-nav-link>
-                                {{-- <x-nav-link href="/register" :active="request()->is('register')" >About</x-nav-link> --}}
+                            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3" >
+                                <x-nav-link href="/" :active="request()->is('/')" style="padding-bottom: 3px;"><img class="svgIkonice2"
+                            src="{{ asset('svg/house-svgrepo-com.svg') }}" /></x-nav-link>
+                                {{-- <x-nav-link href="/prodaja/kontakt" :active="request()->is('/prodaja/kontakt')" >Kontakt</x-nav-link> --}}
                                 {{-- <x-nav-link class="nav-link mx-lg-2" href="/katalog" :active="request()->is('katalog')">Katalog</x-nav-link> --}}
                                 {{-- <x-nav-link class="nav-link mx-lg-2" href="/promocija" :active="request()->is('promocija')">Promocije</x-nav-link> --}}
                                 {{-- <x-nav-link  href="/kontakt" >Kontakt</x-nav-link> --}}
@@ -73,6 +76,7 @@
 
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('js/mojaScripta.js') }}"></script>
+    <script src="{{ asset('js/popUp.js') }}"></script>
     
 </body>
 

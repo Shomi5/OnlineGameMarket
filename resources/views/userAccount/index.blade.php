@@ -12,19 +12,51 @@
             <p>{{ Auth::user()->email }} </p>
         </div>
     </div>
-    <div class="OkvirTabele">
-        <div class="tableHader">
-            <div for="naziv">Naziv</div>
-            <div for="kluc">Kljuc</div>
-            <div for="cena">Cena</div>
+    <div class="userTable">
+        <div class="table-wrapper">
+            <table class="tableAdminPanel">
+                <thead>
+                    <tr>
+                        <th>Slika igre</th>
+                        <th>Naziv igre</th>
+                        <th>Ključ</th>
+                        <th>Cena</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if(!$kupovine->isEmpty())
+                    
+                    @foreach ($kupovine as $kupovina)
+                        <tr>
+                            <td><img src="{{ asset('images/slikeIgara/' . $kupovina->Naziv . '.jpg') }}"
+                            style="width: 170px; border:none;" alt="..."></td>
+                            <td>{{ $kupovina->Naziv }}</td>
+                            <td>{{ $kupovina->Kljuc_ID }}</td>
+                            <td>{{ $kupovina->Cena }} Rsd</td>
+                        </tr>
+                    @endforeach
+                    @else
+                    <tr>
+                        <td colspan="4">Niste kupili nijednu igru do sad</td>
+                    </tr>
+                    @endif
+                </tbody>
+            </table>
+
         </div>
-        <div class="podaciTabele">
-            @foreach ($kupovine as $kupovina)
-                <div class="jezgro">{{ $kupovina->Naziv }}</div>
-                <div class="jezgro">{{ $kupovina->Kljuc_ID }}</div>
-                <div class="jezgro">{{ $kupovina->Cena }}Rsd</div>
-            @endforeach
-        </div>
+
     </div>
+    <article>
+        <div id="porukeUspehPopUp"  class="popup {{ session('porukaUspeh') != null ? 'show' : '' }}">
+            <div class="popup-content" style="background-color: rgb(89 133 199 / 49%);">
+                @if(session('porukaUspeh') != null)
+               <div class="obavestenjeUspeha">
+                    <h2 class="por">{{ session('porukaUspeh')["naslov"]}}</h2>
+                    <p class="spot"><strong>{{ session('porukaUspeh')["poruka"]}}</strong></p>
+                </div>
+                @endif
+            </div>
+        </div>
+    </article>
 
 </x-profil-link>

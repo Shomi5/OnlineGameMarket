@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2025 at 12:53 PM
+-- Generation Time: Aug 30, 2025 at 12:59 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.3.13
 
@@ -32,6 +32,14 @@ CREATE TABLE `cache` (
   `value` mediumtext NOT NULL,
   `expiration` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `cache`
+--
+
+INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
+('5c785c036466adea360111aa28563bfd556b5fba', 'i:1;', 1756378036),
+('5c785c036466adea360111aa28563bfd556b5fba:timer', 'i:1756378035;', 1756378035);
 
 -- --------------------------------------------------------
 
@@ -161,85 +169,78 @@ CREATE TABLE `kljuc` (
 --
 
 INSERT INTO `kljuc` (`Kljuc_ID`, `Igra_ID`, `Status`) VALUES
-('184A-23FS-A4A2', 112, 1),
-('184A-23FS-VSA2', 106, 1),
+('184A-23FS-A4A2', 112, 0),
 ('184A-23FS-VSAH', 114, 1),
-('184A-23FS-VSAJ', 108, 0),
 ('184A-G3FS-VSA2', 120, 1),
+('7KX9-2LPQ-M5ZD', 138, 0),
 ('953A-23FS-VSA2', 114, 1),
+('982A-23FS-2456', 105, 1),
+('982A-23FS-24GD', 106, 1),
+('982A-23FS-45HR', 101, 0),
+('982A-23FS-6HDF', 101, 0),
+('982A-23FS-98KG', 101, 0),
+('982A-23FS-AAAA', 106, 0),
+('982A-23FS-DFDG', 117, 0),
+('982A-23FS-GB54', 104, 1),
+('982A-23FS-H53F', 105, 1),
+('982A-23FS-HDN4', 101, 0),
+('982A-23FS-HDS2', 101, 0),
+('982A-23FS-HGKG', 101, 0),
+('982A-23FS-HHGJ', 103, 1),
+('982A-23FS-HHHH', 106, 0),
+('982A-23FS-HJFD', 106, 1),
+('982A-23FS-HYH6', 101, 0),
+('982A-23FS-JHUY', 101, 0),
+('982A-23FS-JY3B', 106, 1),
+('982A-23FS-UUJH', 101, 0),
+('982A-23FS-VD42', 120, 1),
+('982A-23FS-VGS2', 114, 1),
 ('982A-23FS-VSA2', 104, 1),
 ('982A-23FS-VSHS', 104, 1),
 ('982A-73FS-VS31', 108, 1),
-('982A-73FS-VSA3', 102, 1),
-('A1D4-FS7G-BNM3', 103, 0),
-('A7D3-FG4K-LMN5', 107, 0),
-('A9D1-FS4G-BNM7', 102, 1),
-('AD3F-SFA4-SAFD', 100, 0),
-('ADAF-SFA4-SAFD', 112, 0),
 ('ADAF-SFA4-SAFG', 117, 1),
 ('AF2A-73FS-VSA2', 115, 1),
 ('AF3D-ZXMS-QWER', 118, 1),
-('ASD1-FGH2-JKL3', 113, 1),
 ('ASD1-FGH2-JKL8', 117, 1),
 ('ASD4-YUI5-JKL6', 114, 1),
-('ASDF-BVCX-QWER', 115, 0),
 ('ASDF-GHMK-ZXCV', 119, 1),
-('B4E7-HY78-PLKM', 116, 0),
-('B4G6-HJ7K-PLM9', 100, 0),
-('B4G7-HY78-PLKM', 112, 0),
-('B7C5-VX3N-LMO1', 109, 1),
-('B8C6-VX4N-LMO2', 110, 0),
+('B7C5-VX3N-LMO1', 109, 0),
+('B7QL-KN9X-RW4P', 101, 0),
 ('BVC7-POI8-PLM9', 114, 1),
 ('C2V5-XT8U-KJH9', 103, 1),
-('C2X6-VB9M-NOP3', 106, 0),
-('C5V3-XT8U-PLM2', 102, 1),
-('C6X2-VB3M-NOP9', 108, 0),
-('C8D2-QR5T-VBN6', 100, 0),
+('D7PX-QV6Z-JE1M', 138, 1),
+('D93K-WQTL-7ZMX', 101, 1),
 ('E3R6-YQ9T-OPZ1', 104, 1),
-('E6R4-YQ9T-OPZ5', 102, 1),
-('E9F1-YU3I-OPZ4', 100, 0),
+('E9F1-YU3I-OPZ4', 118, 1),
 ('F3D6-GH9K-LME1', 108, 1),
-('F3D6-GH9K-LMN1', 106, 1),
-('F7D3-GH4K-LM9N', 105, 0),
 ('G4H7-AS2D-XCV5', 104, 1),
-('G5H3-XC8V-BNM1', 100, 0),
-('G7H2-AS1D-KJH8', 102, 1),
-('H4J9-KG2D-MLN6', 109, 1),
+('H4J9-KG2D-MLN6', 109, 0),
 ('H5J1-KG3D-MLN7', 110, 1),
 ('H9J3-KL4M-NOP5', 104, 1),
 ('HG6D-KO8S-LMNP', 118, 1),
+('J3A4-WXNT-7V6K', 138, 1),
 ('J4K7-HG2D-MLN5', 108, 1),
-('J4K7-HG3D-MLN5', 106, 1),
-('J4K8-HG2D-MLN9', 107, 0),
-('J7K4-DF9Q-WER2', 100, 1),
-('J8K5-WE3R-XCV9', 102, 1),
 ('JKL0-BVC1-XCV2', 114, 1),
+('JX7P-QT4L-9ZFD', 101, 1),
+('K0Y3-R2WB-GN6V', 138, 1),
 ('K1L3-MN4O-PQZ5', 109, 1),
 ('K2L4-MN5O-PQZ6', 110, 1),
-('K8J2-HG5D-MLN9', 105, 0),
+('KDL4-ZXQM-R9TP', 101, 1),
 ('KEH8-TR45-YUIO', 116, 1),
 ('KJH8-TR45-YUIO', 112, 1),
-('LKJ0-POI1-ASD2', 113, 1),
+('L6VB-XPQ9-0AZW', 138, 1),
 ('LKJ0-POI1-ASUL', 117, 1),
-('LKJH-G1DS-QWER', 122, 0),
 ('LKJH-GFC6-WERT', 119, 1),
-('LKJH-TRFG-YTRE', 115, 0),
-('LKOP-MN9V-CXZ3', 120, 0),
-('M8N6-PO1L-KJH5', 101, 0),
-('M9N7-PO2L-QT5R', 102, 1),
 ('MABV-CX23-UIOP', 116, 1),
 ('MN34-ASD5-FGH6', 114, 1),
-('MNBV-C8ZS-RTYU', 122, 0),
 ('MNBV-CX23-UIOP', 112, 1),
 ('MNBV-CX9Y-LOPQ', 118, 1),
 ('MNBV-CXJS-RTYU', 119, 1),
+('MW2C-8LKV-ZX93', 101, 1),
 ('OA90-ASDF-QWER', 116, 1),
 ('OP90-ASDF-QWER', 112, 1),
-('P1O5-QT7R-YU8I', 105, 0),
 ('P1Q3-YU4I-BNM6', 103, 1),
-('P2Q4-YT7U-XCV3', 101, 1),
 ('P8Q2-YO5T-AXW9', 109, 1),
-('P9O5-QY7T-RUI8', 107, 0),
 ('P9Q3-YO6T-AXW1', 110, 1),
 ('PLKM-JN8B-GVF6', 120, 1),
 ('PLKM-JNCB-GVF6', 122, 1),
@@ -247,51 +248,44 @@ INSERT INTO `kljuc` (`Kljuc_ID`, `Igra_ID`, `Status`) VALUES
 ('POIU-YTME-BNMQ', 119, 1),
 ('POIU-YTRE-MNBV', 115, 1),
 ('Q5T7-UI8O-PZX2', 104, 1),
+('Q98D-KL7B-ZX5P', 138, 1),
 ('QAZW-ED8V-TYUI', 118, 1),
 ('QAZW-EXCV-TYUI', 122, 1),
 ('QWDS-FG4B-YUIO', 120, 1),
-('QWE4-RTY5-UIO6', 113, 1),
 ('QWE4-RTY5-UIOR', 117, 1),
 ('QWER-POIU-LKJH', 115, 1),
 ('QWERT-YNIOP-PLMN', 119, 1),
-('R3T6-YQ9O-APD1', 105, 1),
+('R3T6-YQ9O-APD1', 105, 0),
 ('R5S2-DF9Q-XT7U', 103, 1),
 ('R9D3-GH4K-LMN5', 108, 1),
-('R9S1-AS4D-GHJ7', 101, 1),
-('RTY3-FGH4-VBN5', 113, 1),
+('RPLD-MN3X-KTV7', 101, 1),
 ('RTY3-FGH4-VPI5', 117, 1),
 ('RTY7-MNB8-UIO9', 114, 1),
-('S9D3-GK4H-LMN5', 106, 1),
-('T5U3-WE8R-PLM2', 101, 1),
 ('T6R8-UI9O-WXP2', 109, 1),
 ('T6U4-WE8R-KJH1', 103, 1),
-('T7Q2-YO4P-AWX6', 107, 0),
 ('T7R9-UI1O-WXP3', 110, 1),
 ('T8Q2-YO3P-AWX9', 108, 1),
-('T8Q2-YO5P-AWX9', 106, 1),
 ('TGBN-YHDD-WSXC', 118, 1),
 ('TR67-GH56-V9NM', 116, 1),
 ('TR67-GH56-VBNM', 112, 1),
-('TYU6-HJK7-UIO8', 113, 1),
+('TR7M-XQL8-BN39', 101, 1),
+('TRM4-9YQE-21AX', 138, 1),
 ('TYU6-HJR7-UIO8', 117, 1),
 ('TYUI-VB4M-ASDF', 120, 1),
 ('UA3A-24FS-VSA2', 117, 1),
-('UY2A-24FS-VSA2', 101, 1),
-('UY2A-24FS-VSAN', 106, 1),
-('UY2A-73FS-VSA2', 100, 1),
-('V6B4-XC9N-OPZ7', 101, 1),
+('UY2A-73FS-JHGN', 101, 0),
 ('V7B3-XC9N-OPZ5', 103, 1),
 ('VFR6-TG5N-MKLO', 118, 1),
-('W1E5-RY7Q-AOP8', 106, 1),
 ('W2E5-RY7Q-AOP8', 108, 1),
-('W3E5-RY9Q-AOP1', 107, 0),
 ('W3E6-RY9Q-AS1D', 104, 1),
+('WMC7-PLQZ-48XK', 101, 1),
 ('X2C6-VB9N-MOP3', 105, 1),
 ('X6C2-VB3N-MOP5', 107, 1),
 ('XCDS-FV4B-HNJK', 120, 1),
 ('XCDS-FV8B-HNJK', 122, 1),
 ('XCV1-TRE2-RTY3', 114, 1),
-('Y8U2-QT5R-KJH3', 101, 1),
+('XPTL-93KD-MCZ8', 101, 1),
+('Y4CZ-MN8V-KJ3D', 138, 1),
 ('Y9U2-QT5R-PLM8', 103, 1),
 ('YU78-MA34-ASDF', 116, 1),
 ('YU78-MN34-ASDF', 112, 1),
@@ -299,7 +293,7 @@ INSERT INTO `kljuc` (`Kljuc_ID`, `Igra_ID`, `Status`) VALUES
 ('Z3E6-RY7Q-AOP1', 109, 1),
 ('Z4E7-RY8Q-AOP2', 110, 1),
 ('Z4Y7-UI3O-PQX5', 105, 1),
-('ZXC7-VBN8-MNB9', 113, 1),
+('Z9FK-2PLD-VXNM', 101, 1),
 ('ZXC7-VJK0-MNB9', 117, 1),
 ('ZXCV-ASDF-QWER', 114, 1),
 ('ZXCV-BN96-WERT', 120, 1),
@@ -316,11 +310,29 @@ INSERT INTO `kljuc` (`Kljuc_ID`, `Igra_ID`, `Status`) VALUES
 CREATE TABLE `kupovina` (
   `Kupovina_ID` int(10) UNSIGNED NOT NULL,
   `Korisnik_ID` bigint(20) UNSIGNED NOT NULL,
+  `Igra_ID` int(10) UNSIGNED NOT NULL,
   `Kljuc_ID` varchar(19) NOT NULL,
   `Datum` timestamp NULL DEFAULT NULL,
   `broj_racuna` varchar(50) NOT NULL,
   `Cena` decimal(8,2) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `kupovina`
+--
+
+INSERT INTO `kupovina` (`Kupovina_ID`, `Korisnik_ID`, `Igra_ID`, `Kljuc_ID`, `Datum`, `broj_racuna`, `Cena`) VALUES
+(84, 25, 101, '982A-23FS-UUJH', '2025-07-30 18:41:20', '12-23133241-24', 6500.00),
+(86, 25, 101, '982A-23FS-6HDF', '2025-07-30 20:21:12', '12-23133241-24', 6500.00),
+(88, 25, 101, '982A-23FS-HDS2', '2025-07-30 21:21:09', '12-23133241-24', 6500.00),
+(89, 25, 101, '982A-23FS-45HR', '2025-07-30 21:29:22', '12-23133241-24', 6500.00),
+(91, 25, 106, '982A-23FS-HHHH', '2025-07-30 21:31:49', '12-23133241-24', 6500.00),
+(92, 25, 101, '982A-23FS-HYH6', '2025-07-30 21:33:40', '12-23133241-24', 6500.00),
+(93, 25, 106, '982A-23FS-AAAA', '2025-07-30 21:33:46', '12-23133241-24', 6500.00),
+(97, 25, 101, 'B7QL-KN9X-RW4P', '2025-08-03 19:12:40', '12-23133241-24', 6500.00),
+(98, 25, 101, '982A-23FS-HDN4', '2025-08-14 09:43:31', '12-23133241-24', 6500.00),
+(105, 25, 117, '982A-23FS-DFDG', '2025-08-18 10:35:53', '12-23133241-24', 4000.00),
+(107, 25, 138, '7KX9-2LPQ-M5ZD', '2025-08-28 09:06:53', '12-23133241-24', 4500.00);
 
 -- --------------------------------------------------------
 
@@ -365,9 +377,18 @@ CREATE TABLE `rezervacija` (
   `Rezervacija_ID` int(10) UNSIGNED NOT NULL,
   `Igra_ID` int(10) UNSIGNED NOT NULL,
   `Korisnik_ID` bigint(20) UNSIGNED NOT NULL,
-  `Datum` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `Kolicina` int(10) UNSIGNED NOT NULL
+  `Datum` timestamp NOT NULL DEFAULT current_timestamp(),
+  `datumObrade` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp(),
+  `Kolicina` int(10) UNSIGNED NOT NULL DEFAULT 1,
+  `statusRezervacija` tinyint(4) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `rezervacija`
+--
+
+INSERT INTO `rezervacija` (`Rezervacija_ID`, `Igra_ID`, `Korisnik_ID`, `Datum`, `datumObrade`, `Kolicina`, `statusRezervacija`) VALUES
+(63, 138, 25, '2025-08-28 11:06:31', '2025-08-28 11:06:53', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -389,7 +410,8 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('6wIuSZdvvRKeaA1GdfRlNWMbHNek8mi4OZQ6ED20', 21, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Herring/90.1.1620.7', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoieWdzR0ppSHhxNVQwOXdpRFlOSHg4QzlMeDVtZnFaZThXRndoWThnTiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MTg6Imh0dHA6Ly9nYW1taW5nLm9yZyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjIxO30=', 1745758381);
+('tpShJXf7a1taeJFXYWSQsIdfbGvF6zDeXZqqCTya', 25, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Trailer/93.3.3462.28', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiemNzd09ZUmRWZHl4SlZWZWpFa2NGeE1KYjdFOUdiQkdqMm9mejNyZyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NTQ6Imh0dHA6Ly9nYW1taW5nLm9yZy9hZG1pblBhbmVsL3VwcmF2bGphbmplUmV6ZXJ2YWNpamFtYSI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjI1O30=', 1756379227),
+('zsLUSYnwZ3m7ZnCsACKITsj6Mh9pkXvhz0pSov6h', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 GLS/100.10.9818.98', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiMEZKd1BUSWlkNzJqdFVPNmlxZGw0N3poc0lOcFBlRXJmUlp4eG15YSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MTg6Imh0dHA6Ly9nYW1taW5nLm9yZyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1756226742);
 
 -- --------------------------------------------------------
 
@@ -401,11 +423,12 @@ CREATE TABLE `users` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `Ime` varchar(255) NOT NULL,
   `prezime` varchar(25) NOT NULL,
-  `broj_racuna` bigint(20) UNSIGNED DEFAULT NULL,
+  `broj_racuna` varchar(50) DEFAULT NULL,
   `email` varchar(255) NOT NULL,
   `email_verified_at` timestamp NULL DEFAULT NULL,
   `password` varchar(255) NOT NULL,
   `status` tinyint(1) NOT NULL DEFAULT 0,
+  `statusRezerKorisnika` tinyint(4) NOT NULL DEFAULT 0,
   `broj_kupljenih_igara` int(10) UNSIGNED DEFAULT NULL,
   `remember_token` varchar(100) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
@@ -416,10 +439,15 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `Ime`, `prezime`, `broj_racuna`, `email`, `email_verified_at`, `password`, `status`, `broj_kupljenih_igara`, `remember_token`, `created_at`, `updated_at`) VALUES
-(21, 'Michael', 'Johnson', NULL, 'Johnson_23@gmail.com', NULL, '$2y$12$65ZEMUWHYcQ8G4OrOlync.Rrgm3pAAlGZSBMopLO0aTWRWOtOYx5q', 1, NULL, NULL, '2025-04-27 10:48:28', '2025-04-27 10:48:28'),
-(22, 'Andrija', 'Nikodinovic', NULL, 'Nikodinovic_42@gmail.com', NULL, '$2y$12$mfU9Nb3hzLcMjNi4b.aA6elG18CqCHUU8gtOZzJXP/M7pE6qtoHK.', 0, NULL, NULL, '2025-04-27 10:50:11', '2025-04-27 10:50:11'),
-(23, 'Pera', 'Ilic', NULL, 'IlicPera@gmail.com', NULL, '$2y$12$yVUi0NKn3tF99wEBFY/jmeSk9SOMiBgMtRk8E6f/T01buBF4cgq0u', 0, NULL, NULL, '2025-04-27 10:52:34', '2025-04-27 10:52:34');
+INSERT INTO `users` (`id`, `Ime`, `prezime`, `broj_racuna`, `email`, `email_verified_at`, `password`, `status`, `statusRezerKorisnika`, `broj_kupljenih_igara`, `remember_token`, `created_at`, `updated_at`) VALUES
+(22, 'Andrija', 'Nikodinovic', NULL, 'Nikodinovic_42@gmail.com', NULL, '$2y$12$mfU9Nb3hzLcMjNi4b.aA6elG18CqCHUU8gtOZzJXP/M7pE6qtoHK.', 0, 0, NULL, NULL, '2025-04-27 10:50:11', '2025-04-27 10:50:11'),
+(23, 'Pera', 'Ilic', NULL, 'IlicPera@gmail.com', NULL, '$2y$12$yVUi0NKn3tF99wEBFY/jmeSk9SOMiBgMtRk8E6f/T01buBF4cgq0u', 0, 0, NULL, NULL, '2025-04-27 10:52:34', '2025-04-27 10:52:34'),
+(24, 'Aleksa', 'Nikolic', NULL, 'Aleksa_Kotroman@gmail.com', NULL, '$2y$12$/67.Aai329G5AThhEM/jBe2AfLhgPz99nwXZqMl95dBhaHW61aebC', 1, 0, NULL, NULL, '2025-04-28 14:15:29', '2025-04-28 14:15:29'),
+(25, 'Admin', 'Adminovic', '12-23133241-24', 'admin@gmail.com', NULL, '$2y$12$5KtvKFLh6r7a/wPiaN.Z9uRWJgV4Dy0AGB0C4/tkuSYxBEp/WLDKa', 1, 0, NULL, NULL, '2025-07-23 10:42:18', '2025-08-28 09:06:53'),
+(26, 'Lazar', 'Lazarević', '12-23133241-24', 'lazarevic113@gmail.com', NULL, '$2y$12$UKwYIgqmlZVEVjSpC15ZDudb5N5gqAeEXKfo13fA2BCSG3mmTA20a', 0, 1, NULL, NULL, '2025-07-30 17:14:13', '2025-07-30 21:41:26'),
+(27, 'Pera', 'Nikolic', NULL, 'Shomi1234567@gmail.com', NULL, '$2y$12$8NGqNLBgnNxJx3RZ8/fMquZh0lf/Z7dMxGboThMjJxixJD5/o3Wo2', 0, 0, NULL, NULL, '2025-08-10 19:46:41', '2025-08-10 19:46:41'),
+(28, 'Sanjica', 'Savic', NULL, 'jovanovic1234567@gmail.com', NULL, '$2y$12$6ffsEYjnJg3fmHx2nP/GveB7YchR0/DtWvP7dTtMAVSyFRR0ps08S', 0, 0, NULL, NULL, '2025-08-10 19:47:42', '2025-08-10 19:47:42'),
+(29, 'Pera', 'Nikolic', NULL, 'aleksa123456@gmail.com', NULL, '$2y$12$d8YAVGC3qils0bxnz2C6GOepjfkpjQlKE.84PjnQ6wnFqe/Ucjqw2', 2, 0, NULL, NULL, '2025-08-26 11:16:44', '2025-08-26 11:16:44');
 
 -- --------------------------------------------------------
 
@@ -431,6 +459,7 @@ CREATE TABLE `video_igra` (
   `Igra_ID` int(10) UNSIGNED NOT NULL,
   `Izdavac_ID` int(10) UNSIGNED DEFAULT NULL,
   `Naziv` varchar(120) NOT NULL,
+  `opisIgre` varchar(500) DEFAULT NULL,
   `Cena_Igre` decimal(8,2) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -438,29 +467,28 @@ CREATE TABLE `video_igra` (
 -- Dumping data for table `video_igra`
 --
 
-INSERT INTO `video_igra` (`Igra_ID`, `Izdavac_ID`, `Naziv`, `Cena_Igre`) VALUES
-(100, 1, 'FIFA 24', 7000.00),
-(101, 1, 'Battlefield 2042', 6500.00),
-(102, 1, 'The Sims 4', 3000.00),
-(103, 1, 'Need for Speed Unbound', 6000.00),
-(104, 1, 'Mass Effect Legendary Edition', 5500.00),
-(105, 2, 'Assassin’s Creed Mirage', 7000.00),
-(106, 2, 'Far Cry 6', 6500.00),
-(107, 2, 'Tom Clancy’s Rainbow Six Siege', 4000.00),
-(108, 1, 'Watch Dogs Legion', 3500.00),
-(109, 2, 'Immortals Fenyx Rising', 5500.00),
-(110, 3, 'Call of Duty Modern Warfare II', 7500.00),
-(112, 3, 'World of Warcraft Dragonflight', 4500.00),
-(113, 3, 'Crash Bandicoot 4 It’s About Time', 5000.00),
-(114, 3, 'Diablo II Resurrected', 4500.00),
-(115, 4, 'God of War Ragnarok', 8000.00),
-(116, 4, 'The Last of Us Part II', 5500.00),
-(117, 4, 'Marvel’s Spider-Man Miles Morales', 6000.00),
-(118, 4, 'Horizon Forbidden West', 7000.00),
-(119, 4, 'Ratchet & Clank Rift Apart', 6500.00),
-(120, 5, 'The Legend of Zelda Tears of the Kingdom', 7000.00),
-(122, 5, 'Mario Kart 8 Deluxe', 5000.00),
-(123, 2, 'Tom Clancy’s The Division 2', 5600.00);
+INSERT INTO `video_igra` (`Igra_ID`, `Izdavac_ID`, `Naziv`, `opisIgre`, `Cena_Igre`) VALUES
+(101, 1, 'Battlefield 2042', 'Uđi u futuroistički ratni pohod u Battlefield 2042! Saznači se s novim oružjem, vozilima i tehnologijama u epskoj borbi za kontrolu svijeta. Pripremi se za najveće bitke ikad!', 6500.00),
+(103, 1, 'Need for Speed Unbound', 'Ušunjite se u ulične trke u Need for Speed Unbound! Izazovite zakone, pobedite rivalstva i ostvarite legendarni status u ovoj arkanoidnoj trci za prvaka. Brzina, stil i pobeda - sve je dozvoljeno!', 6000.00),
+(104, 1, 'Mass Effect Legendary Edition', 'Uđi u svemirsku avanturu u Mass Effect Legendary Edition! Kao kapetan Shepard, spasi čovečanstvo od uništenja u ratu protiv neprijateljskih vanzemaljaca. Istraži galaksiju, razvijaj svoje sposobnosti i donesi odluke koje će promeniti sudbinu svemira.', 5500.00),
+(105, 2, 'Assassin’s Creed Mirage', 'Ušunjite se u srce Bagdada, 9. veka, kao Basim Ibn Ishaq, mlad i ambiciozan asasin. Istražujte uske ulice i veličanstvene palate, boreći se protiv templara i otkrivajući misterije davnog grada.', 7000.00),
+(106, 2, 'Far Cry 6', 'Ušunjite se u srce revolucije na ostrvu Yara, gdje se boriš protiv diktatorske vladavine Antona Kastila. Sa oružjem, eksplozivom i lukavstvom, vodi pobunu i oslobodi narod od tiranije.', 6500.00),
+(107, 2, 'Tom Clancy’s Rainbow Six Siege', 'Ušunjite se u svet elitnih antiterorističkih jedinica u Tom Clancy\'s Rainbow Six Siege. Strategija, timski rad i brza reakcija su ključ uspeha u ovom napetu takmičarskom shooteru.', 4000.00),
+(108, 1, 'Watch Dogs Legion', 'U Londonu budućnosti, revolucija je u punom zamahu. Pridruži se otporu kao bilo koji građanin koji se bori protiv tiranske vlade i korporativne vlasti. Svaki lik ima svoju jedinstvenu priču i vještine, a ti određuješ koji će biti heroj ovog otpora.', 3500.00),
+(109, 2, 'Immortals Fenyx Rising', 'U ovom akcijsko-avanturističkom romanu, uzećete ulogu Fenyx, poluboga koji se bori protiv mitoloških čudovišta u ancient Grčkoj. Istražujte božanske krajobraze, rešavajte zagonetke i oslobodite bogove koji su zarobljeni u svojim vlastitim rajevima.', 5500.00),
+(110, 3, 'Call of Duty Modern Warfare II', 'Ušunjeno u moderni rat, ti se boriš protiv globalne terorističke pretnje kao član elitnog tima specijalnih snaga. Intenzivne borbe, brze akcije i šokantne činjenice čekaju te u Call of Duty Modern Warfare II.', 7500.00),
+(112, 3, 'World of Warcraft Dragonflight', 'Leti sa zmajevima kroz Azeroth! U World of Warcraft: Dragonflight, otkrij novu eru zmajeva i istražuj prostrane krajeve, dok se boriš protiv mraka koji preti ovom svetu. Sjedini se sa zmajevima i spasi Azeroth!', 4500.00),
+(114, 3, 'Diablo II Resurrected', 'Vraćaj se u mraku koji je oblio san, u svet demonske osvete. Diablo II Resurrected donosi obnovljeni klasik, sa poboljšanim grafikom i istim užasnim bojama koji će te zadržati na ivici stolice.', 4500.00),
+(115, 4, 'God of War Ragnarok', 'Uzmi čelik u ruke i pripremi se za epsku borbu! God of War Ragnarok donosi novu avanturu Kratosa i Atrea kroz mračne zemlje Nordlanda, gde ih čekaju strašni bogovi i čudovišta. Borba za opstanak počinje!', 8400.00),
+(116, 4, 'The Last of Us Part II', 'U post-apokaliptičnom svetu zaraze, Ellie kreće u osvetničku misiju protiv onih koji su joj uništili život. Suočena sa mržnjom, gorčinom i uništenjem, mora da se suoči sa samom sobom i otkrije šta joj ostaje od čovečnosti.', 5500.00),
+(117, 4, 'Marvel’s Spider-Man Miles Morales', 'U ovom akcionom avanturi, preuzmite kontrolu nad Milesom Moralesom, mladim Spider-Manom koji se bori protiv zlikovaca na ulicama New Yorka. Istražite grad, koristite svoje čudesne moći i spasite grad od uništenja!', 4000.00),
+(118, 4, 'Horizon Forbidden West', 'Ušunjena zemlja, izgubljena civilizacija, a ti si Aloy, lovkinja koji se bori za opstanak u svetu zauzetom mehaničkim stvorenjima. Istraži tajanstvenu Zapadnu granicu, otkrij skrivene tajne i pobedi neprijatelje u ovom epskom avanturi.', 7000.00),
+(119, 4, 'Ratchet & Clank Rift Apart', 'Uzmi oružje i pridruži se Ratchetu i Clanku u njihovom najnovijem avanturi! Proputujte se kroz dimenzije, spremajući se za čiste akcije, ludilo i neverovatne tehničke inovacije u Rift Apart, najboljoj igri iz serijala!', 5500.00),
+(120, 5, 'The Legend of Zelda Tears of the Kingdom', 'U novom čudesnom svetu Hyrulea, Link mora da spasi kraljevstvo od uništenja. Sa svojom snagom i mudrošću, mora da razreši misterije i pobedi neprijatelje kako bi vratio mir u kraljevstvo.', 7000.00),
+(122, 5, 'Mario Kart 8 Deluxe', 'Utrkajte se sa prijateljima i porodicom u najbržoj i najluđoj trci ikad! Mario Kart 8 Deluxe donosi neverovatne staze, novitetne vozilo i karaktere, kao i mogućnost igranja sa 8 igrača lokalno ili online. Pripremite se za neverovatnu zabavu!', 5000.00),
+(123, 2, 'Tom Clancy’s The Division 2', 'U ruševnom Washingtonu D.C., kao član elitne jedinice Division, borite se protiv kriminala i korupcije. Istražite razorene ulice, skupljajte resurse i savladajte neprijatelje kako biste obnovili red i stabilnost u gradu.', 5600.00),
+(128, 5, 'Crash Bandicoot 4 It’s About Time', 'Crash Bandicoot 4: It\'s About Time - Nova avantura legendarnog ježa! Crash i Coco putuju kroz vreme, spašavajući svet od uništenja. Novi napredni mehanizmi, neverovatni leveli i humor koji će vas napraviti u smehu!', 4500.00),
+(138, 1, 'FIFA 24', 'Utakmicite u najrealističnijem fudbalskom iskustvu! FIFA 24 donosi poboljšanu grafiku, novi animationski sistem i revolucionarni režim karijere koji vam omogućava da razvijate svoju fudbalsku legendo!', 4500.00);
 
 --
 -- Indexes for dumped tables
@@ -533,7 +561,8 @@ ALTER TABLE `kljuc`
 ALTER TABLE `kupovina`
   ADD PRIMARY KEY (`Kupovina_ID`,`Korisnik_ID`,`Kljuc_ID`) USING BTREE,
   ADD UNIQUE KEY `Kljuc_ID` (`Kljuc_ID`),
-  ADD KEY `fk_kupovina_korisnik` (`Korisnik_ID`);
+  ADD KEY `fk_kupovina_korisnik` (`Korisnik_ID`),
+  ADD KEY `fk_kupovina_igra` (`Igra_ID`);
 
 --
 -- Indexes for table `migrations`
@@ -568,8 +597,7 @@ ALTER TABLE `sessions`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `users_email_unique` (`email`),
-  ADD UNIQUE KEY `BrojRacuna` (`broj_racuna`);
+  ADD UNIQUE KEY `users_email_unique` (`email`);
 
 --
 -- Indexes for table `video_igra`
@@ -598,13 +626,13 @@ ALTER TABLE `izdavac`
 -- AUTO_INCREMENT for table `jobs`
 --
 ALTER TABLE `jobs`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `kupovina`
 --
 ALTER TABLE `kupovina`
-  MODIFY `Kupovina_ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `Kupovina_ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=108;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -616,19 +644,19 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `rezervacija`
 --
 ALTER TABLE `rezervacija`
-  MODIFY `Rezervacija_ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `Rezervacija_ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `video_igra`
 --
 ALTER TABLE `video_igra`
-  MODIFY `Igra_ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=124;
+  MODIFY `Igra_ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=139;
 
 --
 -- Constraints for dumped tables
@@ -651,6 +679,7 @@ ALTER TABLE `kljuc`
 -- Constraints for table `kupovina`
 --
 ALTER TABLE `kupovina`
+  ADD CONSTRAINT `fk_kupovina_igra` FOREIGN KEY (`Igra_ID`) REFERENCES `video_igra` (`Igra_ID`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_kupovina_kljuc` FOREIGN KEY (`Kljuc_ID`) REFERENCES `kljuc` (`Kljuc_ID`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_kupovina_korisnik` FOREIGN KEY (`Korisnik_ID`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 

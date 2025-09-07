@@ -42,8 +42,8 @@ DB_PASSWORD=
 1. Otvoriti folder AI-sertifikat
 2. Zip otpakovati na lokaciji c:\ ili d:\
 3. Otvoriti php.ini
-   3.1 curl.cainfo = "D:\\cacert\\cacert.pem" - Ako je na c:\ izmenite
-   3.2 openssl.cafile = "D:\\cacert\\cacert.pem" - Ako je na c:\ izmenite 
+   3.1. curl.cainfo = "D:\\cacert\\cacert.pem" - Ako je na c:\ izmenite
+   3.2. openssl.cafile = "D:\\cacert\\cacert.pem" - Ako je na c:\ izmenite 
 
 ## Dodavanje baze:
 1. Otvoriti folder database-script

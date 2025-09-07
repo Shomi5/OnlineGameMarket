@@ -59,7 +59,11 @@ DB_PASSWORD=
 3. ModeratorAcc:
    email:dimi123@gmail.com
    password:dimi1234
-   
+
+
+## Testiranje unosa ključeva preko exela
+1. Preko admin panela otvriti folder primerKljuceva
+2. Izabrati koji set ključeva ćete testirati  
 5. AdminAcc:
    email: admin@gmail.com
    password: aleksa1234

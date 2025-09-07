@@ -1,0 +1,87 @@
+.userTable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 0.5px;
+}
+
+.titleBorder {
+    width: 90%;
+    border-bottom: 5px solid white;
+    border-end-end-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.table-wrapper {
+    width: 100%;
+    max-height: 300px;
+    /* ili visina koja ti odgovara */
+    overflow-y: auto;
+
+}
+
+.tableAdminPanel {
+    width: 100%;
+    border-collapse: collapse;
+    /*table-layout: fixed;*/
+}
+
+.tableAdminPanel th,
+td {
+    border-bottom: 1px solid #ffffff;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #f0f0f0;
+}
+
+.tableAdminPanel td {
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 1px solid #ffffff;
+    text-overflow: ellipsis;
+}
+
+.tableAdminPanel td.email-column {
+    max-width: 200px;
+}
+
+.tableAdminPanel td img {
+    height: 100px;
+    width: 100px;
+    border-radius: 5%;
+    border: 3px solid #1145807e;
+}
+
+.tableAdminPanel tr:nth-child(even) {
+    background-color: #1145807e;
+}
+
+.tableAdminPanel tr:nth-child(odd) {
+    background-color: #1145807e;
+}
+
+.tableAdminPanel td {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tableAdminPanel tr:hover td {
+    background-color: #137acecc;
+    color: white;
+    cursor: pointer;
+}
+
+@media (width < 1200px) {
+    .table-wrapper {
+        width: 100%;
+        max-height: 250px;
+        /* ili visina koja ti odgovara */
+        overflow-y: auto;
+
+    }
+}

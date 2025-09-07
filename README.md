@@ -25,7 +25,7 @@ Ovaj projekat je web-site za online prodaju video igara. Omogućava korisnicima 
 2. npm install
 
 # Konfigurisanje .env fajla
-# Uneti u terminal:
+## Uneti u terminal:
 1. cp .env.example .env
 2. php artisan key:generate 
 

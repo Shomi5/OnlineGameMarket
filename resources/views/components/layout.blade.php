@@ -10,6 +10,7 @@
     <title>Game Vault</title>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="{{ asset('css/popUpCss.css') }}">
     <link rel="stylesheet" href="{{ asset('css/tabela2.css') }}">
     <link rel="stylesheet" href="{{ asset('css/myStyle.css') }}">
@@ -75,8 +76,10 @@
 
 
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="{{ asset('js/mojaScripta.js') }}"></script>
     <script src="{{ asset('js/popUp.js') }}"></script>
+    <script src="{{ asset('js/rezervacijeSlider.js') }}"></script>
     
 </body>
 

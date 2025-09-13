@@ -114,6 +114,7 @@
                                     <p>Status: <span class="uspeh">Obrađeno</span> </p>
                                 @endif
                                 <p>Video igra: {{ $rezer->Naziv }}</p>
+                                <p>Korisnik: {{ $rezer->email }}</p>
                                 <p>Cena video igra: {{ $rezer->Cena_Igre }} rsd</p>
                                 <p>Datum i vreme naručivanja: {{ $rezer->Datum }}</p>
                                 @if ($rezer->statusRezervacija == 1)
@@ -125,8 +126,7 @@
 
                         </div>
                         <div class="naruzbinaOdustani">
-                            <a href="/adminPanel/obrisiRezervaciju/{{ $rezer->Rezervacija_ID }}">Odustani od
-                                narudžbine</a>
+                            <a href="/adminPanel/obrisiRezervaciju/{{ $rezer->Rezervacija_ID }}">Otkaži rezervaciju</a>
                         </div>
 
                     </div>
@@ -161,6 +161,7 @@
                                     <p>Status: <span class="uspeh">Obrađeno</span> </p>
                                 @endif
                                 <p>Video igra: {{ $rezer->Naziv }}</p>
+                                <p>Korisnik: {{ $rezer->email }}</p>
                                 <p>Cena video igra: {{ $rezer->Cena_Igre }} rsd</p>
                                 <p>Datum i vreme naručivanja: {{ $rezer->Datum }}</p>
                                 @if ($rezer->statusRezervacija == 1)

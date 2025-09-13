@@ -27,7 +27,7 @@ Route::get("/register",[RegisterUserController::class,"create"]);
 Route::post("/register",[RegisterUserController::class,"store"]);
 
 Route::get("/login",[LoginUserController::class,"login"]);
-Route::post("/login",[LoginUserController::class,"store"])->name('login.store')->middleware('custom.throttle:5,5');
+Route::post("/login",[LoginUserController::class,"store"])->name('login.store')->middleware('custom.throttle:5,1');
 Route::post("/logout",[LoginUserController::class,"destroy"])->middleware(LoginAutorizacija::class);
 
 Route::get("/userAccount",[UserAccountController::class,"index"])->middleware(LoginAutorizacija::class);

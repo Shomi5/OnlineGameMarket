@@ -35,7 +35,7 @@ class ProdajaController extends Controller
     public function index()
     {
 
-        $igra = VideoIgra::join("izdavac", "video_igra.izdavac_ID", "=", "izdavac.izdavac_ID")->select("video_igra.*", "izdavac.Naziv as izdavacNaziv")->orderBy('Cena_Igre', 'desc')->orderBy('video_igra.Igra_ID', 'asc')->take(3)->get();
+        $igra = VideoIgra::join("izdavac", "video_igra.izdavac_ID", "=", "izdavac.izdavac_ID")->select("video_igra.*", "izdavac.Naziv as izdavacNaziv")->orderBy('video_igra.Igra_ID', 'desc')->orderBy('video_igra.Igra_ID', 'asc')->take(3)->get();
         $sveigre = VideoIgra::all();
         if (Auth::guest()) {
             return View("prodaja.index", ["igra" => $igra, "sveigre" => $sveigre, "Cookie" => 0, "omoguceneRezervacije" => null]);

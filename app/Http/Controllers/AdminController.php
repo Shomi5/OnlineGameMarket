@@ -30,28 +30,26 @@ class AdminController extends Controller
             return "Niste poslali ime igre";
         } else {
 
-            try{
+            try {
                 $odgovor = Http::withToken(config('services.openai.laravel_key'))->post('https://api.groq.com/openai/v1/chat/completions', [
-                'model' => 'llama3-70b-8192',
-                'messages' => [
-                    ['role' => 'system', 'content' => 'Ti si AI koji piše kreativne opise video igara.'],
-                    ['role' => 'user', 'content' => "Napiši **isključivo** jedan kratak opis video igre '{$nazivIgre}' na srpskom jeziku. Opis **mora imati najviše 150 karaktera**. Ne dodaj ništa dodatno."],
-                ],
-                'temperature' => 0.7,
-                'max_tokens' => 300,
-            ])->json();
+                    'model' => 'llama-3.1-8b-instant',
+                    'messages' => [
+                        ['role' => 'system', 'content' => 'Ti si AI koji piše kreativne opise video igara.'],
+                        ['role' => 'user', 'content' => "Napiši **isključivo** jedan opis video igre '{$nazivIgre}' srednje dužine na srpskom jeziku. Opis **mora imati najviše 250 karaktera**. Ne dodaj ništa dodatno."],
+                    ],
+                    'temperature' => 0.7,
+                    'max_tokens' => 300,
+                ])->json();
 
-            if (isset($odgovor['error']) && $odgovor['error'] != null) {
+                if (isset($odgovor['error']) && $odgovor['error'] != null) {
+                    return false;
+                }
+
+                $opis = $odgovor['choices'][0]['message']['content'];
+                return trim($opis, '"');
+            } catch (ConnectionException $e) {
                 return false;
             }
-
-            $opis = $odgovor['choices'][0]['message']['content'];
-            return trim($opis, '"');
-            }
-            catch(ConnectionException $e){
-                return false;
-            }
-            
         }
     }
 
@@ -123,8 +121,13 @@ class AdminController extends Controller
         );
 
         $editUser = User::where("id", request("korisnickiEmailEdit"))->first();
+        $statusi = [
+            0 => "Regularni status",
+            2 => "Moderator status",
+        ];
 
-        return view("/adminPanel/editKorisnika", ["editUser" => $editUser]);
+
+        return view("/adminPanel/editKorisnika", ["editUser" => $editUser, "statusi" => $statusi]);
     }
 
 
@@ -135,12 +138,14 @@ class AdminController extends Controller
             "ime" => ["required"],
             "prezime" => ["required"],
             "email" => ["required", "email"],
+            "statusKorisnika" => ["required"],
             "oldPassword" => ["required"],
             "password" => ["confirmed"]
         ], [
             "ime.required" => "Morate uneti ime",
             "prezime.required" => "Morate uneti prezime",
             "email.required" => "Morate uneti e-mail",
+            "statusKorisnika.required" => "Morate odabrati status korisnika",
             "emial.email" => "Pogrešan format unosa",
             "oldPassword.required" => "Morate uneti vaš šifru",
             "password.confirmed" => "Šifre se ne podudaraju",
@@ -168,6 +173,7 @@ class AdminController extends Controller
             $userEdit->Ime = request("ime");
             $userEdit->prezime = request("prezime");
             $userEdit->email = request("email");
+            $userEdit->status = request("statusKorisnika");
             if (request("password")) {
                 $userEdit->password = Hash::make(request("password"));
             }
@@ -275,7 +281,7 @@ class AdminController extends Controller
         $opis = "";
         if (request("opisIgre") == null) {
             $opis = $this->generisiOpis(request("nazivIgre"));
-            if($opis == false){
+            if ($opis == false) {
                 throw ValidationException::withMessages(["opisIgre" => "Asistent trenutno nije dostupan. Morate sami uneti opis."]);
             }
         } else {

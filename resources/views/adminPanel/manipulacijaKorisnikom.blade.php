@@ -46,7 +46,9 @@
                     <select type=submit name="korisnickiEmailEdit" >
                         <option class="unutrasnjiOption" value="">Svi korisnici:</option>
                         @foreach ($korisnik as $user)
+                        @if($user->status != 1)
                         <option class="unutrasnjiOption" value={{ $user->id}}>{{ $user->email}}</option>
+                        @endif
                         @endforeach
                     </select>
                     <x-form-error name="korisnickiEmailEdit"></x-form-error>
@@ -61,7 +63,9 @@
                     <select type=submit name="korisnickiEmailBrisanje" >
                         <option class="unutrasnjiOption" value="">Svi korisnici:</option>
                         @foreach ($korisnik as $user)
+                        @if($user->status != 1)
                         <option class="unutrasnjiOption" value={{$user->id}}>{{ $user->email}}</option>
+                        @endif
                         @endforeach
                     </select>
                     <x-form-error name="korisnickiEmailBrisanje"></x-form-error>

@@ -20,21 +20,27 @@
 
 .pozicijaKartica {
     display: flex;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
     margin: 20px 0;
     justify-content: space-between;
-    overflow-x: auto;
+    /* overflow-x: auto; */
     gap: 24px;
     padding: 20px;
     
 }
 
+
+.pozicijaKartica .swiper-pagination{
+    bottom: 0px;
+}
+
+.pozicijaKartica .swiper-pagination-bullet{
+    background: #fff;
+}
+
 .unutraTabelePop {
-    /* background: rgba(16, 120, 180, 0.637); */
     background: rgb(10 174 201 / 66%);
     border-radius: 10px;
-    /* flex: 0 0 45%; */
-    /* 2 po redu, adaptivno */
     min-width: 400px;
     scroll-snap-align: start;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);

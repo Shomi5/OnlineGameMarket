@@ -20,15 +20,23 @@
 
 .pozicijaKartica {
     display: flex;
+<<<<<<< HEAD
     /* flex-wrap: nowrap; */
     margin: 20px 0;
     justify-content: space-between;
     /* overflow-x: auto; */
+=======
+    flex-wrap: nowrap;
+    margin: 20px 0;
+    justify-content: space-between;
+    overflow-x: auto;
+>>>>>>> fff55ca267e9da219f55a16830d9a0c2c6bc3b2a
     gap: 24px;
     padding: 20px;
     
 }
 
+<<<<<<< HEAD
 
 .pozicijaKartica .swiper-pagination{
     bottom: 0px;
@@ -41,6 +49,14 @@
 .unutraTabelePop {
     background: rgb(10 174 201 / 66%);
     border-radius: 10px;
+=======
+.unutraTabelePop {
+    /* background: rgba(16, 120, 180, 0.637); */
+    background: rgb(10 174 201 / 66%);
+    border-radius: 10px;
+    /* flex: 0 0 45%; */
+    /* 2 po redu, adaptivno */
+>>>>>>> fff55ca267e9da219f55a16830d9a0c2c6bc3b2a
     min-width: 400px;
     scroll-snap-align: start;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);

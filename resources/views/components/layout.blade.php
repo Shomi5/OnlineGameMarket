@@ -10,7 +10,10 @@
     <title>Game Vault</title>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+=======
+>>>>>>> fff55ca267e9da219f55a16830d9a0c2c6bc3b2a
     <link rel="stylesheet" href="{{ asset('css/popUpCss.css') }}">
     <link rel="stylesheet" href="{{ asset('css/tabela2.css') }}">
     <link rel="stylesheet" href="{{ asset('css/myStyle.css') }}">
@@ -76,10 +79,15 @@
 
 
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+<<<<<<< HEAD
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="{{ asset('js/mojaScripta.js') }}"></script>
     <script src="{{ asset('js/popUp.js') }}"></script>
     <script src="{{ asset('js/rezervacijeSlider.js') }}"></script>
+=======
+    <script src="{{ asset('js/mojaScripta.js') }}"></script>
+    <script src="{{ asset('js/popUp.js') }}"></script>
+>>>>>>> fff55ca267e9da219f55a16830d9a0c2c6bc3b2a
     
 </body>
 

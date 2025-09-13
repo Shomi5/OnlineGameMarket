@@ -114,7 +114,10 @@
                                     <p>Status: <span class="uspeh">Obrađeno</span> </p>
                                 @endif
                                 <p>Video igra: {{ $rezer->Naziv }}</p>
+<<<<<<< HEAD
                                 <p>Korisnik: {{ $rezer->email }}</p>
+=======
+>>>>>>> fff55ca267e9da219f55a16830d9a0c2c6bc3b2a
                                 <p>Cena video igra: {{ $rezer->Cena_Igre }} rsd</p>
                                 <p>Datum i vreme naručivanja: {{ $rezer->Datum }}</p>
                                 @if ($rezer->statusRezervacija == 1)
@@ -126,7 +129,12 @@
 
                         </div>
                         <div class="naruzbinaOdustani">
+<<<<<<< HEAD
                             <a href="/adminPanel/obrisiRezervaciju/{{ $rezer->Rezervacija_ID }}">Otkaži rezervaciju</a>
+=======
+                            <a href="/adminPanel/obrisiRezervaciju/{{ $rezer->Rezervacija_ID }}">Odustani od
+                                narudžbine</a>
+>>>>>>> fff55ca267e9da219f55a16830d9a0c2c6bc3b2a
                         </div>
 
                     </div>
@@ -161,7 +169,10 @@
                                     <p>Status: <span class="uspeh">Obrađeno</span> </p>
                                 @endif
                                 <p>Video igra: {{ $rezer->Naziv }}</p>
+<<<<<<< HEAD
                                 <p>Korisnik: {{ $rezer->email }}</p>
+=======
+>>>>>>> fff55ca267e9da219f55a16830d9a0c2c6bc3b2a
                                 <p>Cena video igra: {{ $rezer->Cena_Igre }} rsd</p>
                                 <p>Datum i vreme naručivanja: {{ $rezer->Datum }}</p>
                                 @if ($rezer->statusRezervacija == 1)

@@ -120,6 +120,7 @@
             </div>
         </div>
     </article>
+<<<<<<< HEAD
     @if ($omoguceneRezervacije != null)
         <article>
             <div id="popupOverlay" class="popup {{ $Cookie == 1 ? 'show' : '' }}">
@@ -167,6 +168,48 @@
             </div>
         </article>
 
+=======
+    @if($omoguceneRezervacije != null)
+    <article>
+        <div id="popupOverlay" class="popup {{ $Cookie == 1 ? 'show' : '' }}">
+            <div class="popup-content" style="background-color: rgb(89 133 199 / 49%); width:700px;">
+                <div class="userTable">
+                    <div class="table-wrapper">
+                        <div class="naruciOkvirPopUp">
+                            @if($omoguceneRezervacije->count() > 1)
+                            <h3>Vaše narudžbine su dostupe</h3>
+                            @else
+                            <h3>Vaša narudžina je dostupna</h3>
+                            @endif
+
+                            <div class="pozicijaKartica {{ $omoguceneRezervacije->count() == 1? "klasaCentar":"" }}">
+                                @if (!$omoguceneRezervacije->isEmpty())
+                                    @foreach ($omoguceneRezervacije as $rezerv)
+                                        <div class="unutraTabelePop">
+                                            <a href="/prodaja/{{ $rezerv->Naziv }}">
+
+                                                <div class="unutraSekcije">
+                                                    <img src="{{ asset('images/slikeIgara/' . $rezerv->Naziv . '.jpg') }}"
+                                                        alt="...">
+                                                </div>
+                                                <div class="unutraSekcije"><p>{{ $rezerv->Naziv }}</p></div>
+                                                <div class="unutraSekcije"><p>{{ $rezerv->Cena_Igre }} Rsd</p></div>
+                                            </a>
+
+
+                                        </div>
+                                    @endforeach
+                                @endif
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </article>
+>>>>>>> fff55ca267e9da219f55a16830d9a0c2c6bc3b2a
     @endif
     <br>
     <br>

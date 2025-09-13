@@ -46,7 +46,11 @@ class UserAccountController extends Controller
     {
 
 
+<<<<<<< HEAD
         // FacadesLog::info("Funkcija dodajVideoIgru je pozvana!");
+=======
+        FacadesLog::info("Funkcija dodajVideoIgru je pozvana!");
+>>>>>>> fff55ca267e9da219f55a16830d9a0c2c6bc3b2a
 
 
         request()->validate([

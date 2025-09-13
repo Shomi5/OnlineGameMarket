@@ -65,7 +65,11 @@ main {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
     margin-top: 30px;
+=======
+    /* margin-top: 30px; */
+>>>>>>> fff55ca267e9da219f55a16830d9a0c2c6bc3b2a
     height: 600px;
     height: auto;
     flex-direction: column;
@@ -109,7 +113,11 @@ main {
 
 .pozicioniranje2 {
     position: relative;
+<<<<<<< HEAD
     top: 200px;
+=======
+    top: 100px;
+>>>>>>> fff55ca267e9da219f55a16830d9a0c2c6bc3b2a
 }
 
 @media(width<1130px) {
@@ -974,6 +982,10 @@ main {
     width: 900px;
     min-height: 650px;
     height: auto;
+<<<<<<< HEAD
+=======
+    margin-bottom: 15px;
+>>>>>>> fff55ca267e9da219f55a16830d9a0c2c6bc3b2a
     background: rgba(6, 154, 240, 0.2);
     /* Providna bela pozadina */
     backdrop-filter: blur(2px);
@@ -1442,7 +1454,11 @@ main {
     min-height: 680px;
     height: auto;
     margin-top: 5px;
+<<<<<<< HEAD
     margin-bottom: 5px;
+=======
+    margin-bottom: 15px;
+>>>>>>> fff55ca267e9da219f55a16830d9a0c2c6bc3b2a
     background: rgba(6, 154, 240, 0.2);
     /* Providna bela pozadina */
     backdrop-filter: blur(2px);

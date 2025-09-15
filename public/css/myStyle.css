@@ -660,14 +660,14 @@ p {
 }
 
 .PozicijaDugmeta {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 15px;
     border: none;
     padding: 15px;
     position: relative;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgb(0 0 0);
 }
 
 .PozicijaDugmeta h2 {
@@ -795,7 +795,7 @@ p {
 
 
 .formaPozicija input {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: none;
@@ -804,8 +804,7 @@ p {
     font-size: 16px;
     color: white;
     outline: none;
-    box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.137),
-        inset -4px -4px 6px rgba(255, 255, 255, 0.158);
+    box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.137), inset -4px -4px 6px rgb(0 0 0 / 29%);
     width: 100%;
 
 }
@@ -2551,12 +2550,12 @@ footer .bi {
         inset -2px -2px 1px rgba(255, 255, 255, 0.1);
 }
 
-.sortForma input:hover,select:hover {
+input:hover,select:hover {
     border: none;
     cursor: pointer;
     background-color: rgba(0, 119, 179, 0.2);
 }
-.sortForma input:focus, select:hover{
+input:focus, select:focus{
     background-color: rgba(0, 119, 179, 0.2);
 }
 

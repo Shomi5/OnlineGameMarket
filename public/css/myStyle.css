@@ -1,0 +1,2754 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input{
+    cursor: pointer;
+}
+
+
+main {
+    background: rgb(47, 47, 47);
+    background: linear-gradient(87deg, rgba(47, 47, 47, 1) 0%, rgba(66, 66, 66, 1) 50%, rgba(47, 47, 47, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.logoviOstalo {
+    background: url(../images/register.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.bg-image {
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.9);
+}
+
+.kards {
+    color: #fff;
+
+}
+
+.fontZeljeni {
+    text-shadow: 0px 2px 2px black;
+}
+
+.carousel-inner {
+    transition: all 0.5s;
+}
+
+
+
+
+.pozicioniranje {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.pozicioniranje-regiser {
+    margin-top: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    margin-top: 40px;
+    bottom: 20px;
+    justify-content: center;
+    min-height: 600px;
+    height: auto;
+    align-items: center;
+}
+
+.pozicioniranje-log {
+    margin-top: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    min-height: 600px;
+    height: auto;
+    align-items: center;
+}
+
+.pozicioniranje-log .ptex {
+    margin: 0;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.pozicioniranje2 {
+    position: relative;
+    top: 100px;
+}
+
+@media(width<1130px) {
+    .pozicioniranje2 {
+        top: 20px;
+    }
+
+}
+
+
+.navbar {
+    transition: all 0.5s ease-in-out;
+    background-color: transparent;
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar .navbar2 {
+    background-color: transparent;
+}
+
+.navbar.sakri {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mojibar {
+    background-color: transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar-scrolled {
+    background-color: rgba(100, 100, 100, 0.753);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+
+.navbar-brand,
+.offcanvas-title {
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 24px;
+    transition: 0.3s color;
+    text-shadow: 0px 2px 2px black;
+}
+
+.navbar-brand:hover,
+.offcanvas-title:hover {
+    color: rgba(81, 236, 241, 0.808);
+}
+
+.Ikonnica {
+    color: white;
+    transition: 0.3s color;
+    text-shadow: 0px 2px 2px black;
+
+
+}
+
+.Ikonnica:hover {
+    color: rgba(81, 236, 241, 0.808);
+}
+
+
+.login-buttin:hover {
+    background-color: #1999af;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6),
+        -2px -2px 5px rgba(255, 255, 255, 0.2);
+}
+
+.login-buttin {
+    width: 95px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    text-shadow: 0px 2px 2px black;
+    color: #fff;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
+.dropdown-menu {
+    background-color: #1e1e1e91;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.dropdown-item {
+    color: white;
+    padding: 3px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.377);
+    border-radius: 2px;
+}
+
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.brn_close:focus {
+    box-shadow: none;
+    outline: none;
+
+}
+
+.centrijar {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+
+
+    color: #949292;
+    font-weight: 500;
+    text-shadow: 0px 2px 2px black;
+    position: relative;
+
+
+}
+
+
+.pozadinaOffcanvas {
+    background-color: rgba(153, 151, 151, 0.541);
+    border: none;
+}
+
+
+
+.nav-link:focus {
+    color: white;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #fcfcfc;
+}
+
+@media(min-width: 991px) {
+
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #4c68e6;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+
+}
+
+.bi {
+    font-size: 35px;
+}
+
+.naslovIgara {
+    height: 100px;
+    background-color: rgb(88, 88, 88);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.naslovIgara h2,
+p {
+    text-shadow: 0px 2px 2px black;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.potekst {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+
+.opisPoteksta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: rgba(0, 119, 179, 0.2);
+    /* background-color: #464646; */
+    border-radius: 10px;
+    margin: 40px 20px;
+    box-shadow: 0px 0px 5px 4px #00000030;
+}
+
+.ikonica {
+    padding: 5px;
+    margin-right: 10px;
+
+}
+
+.tekstPoteksta {
+    text-shadow: 0px 2px 2px black;
+}
+
+.ikonica .bi {
+    background-image: linear-gradient(to right, #397576, #76a2a3);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.velikaSlova {
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+}
+
+.malaSlova {
+    color: #fff;
+    font-size: 12px;
+}
+
+@media(width < 550px) {
+    .potekst {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+
+.karosel {
+    overflow: hidden;
+}
+
+.karosel img {
+    max-height: 700px;
+    filter: brightness(80%);
+
+}
+
+@media(max-width: 991px) {
+
+    .karosel {
+        overflow: hidden;
+
+    }
+
+    .karosel img {
+        max-height: 550px;
+        object-fit: cover;
+    }
+}
+
+/* OVDE POCINJE CSS ZA REGISTER */
+
+.okvir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unutrasljost {
+
+    position: relative;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    width: 700px;
+    min-height: 360px;
+    text-shadow: 0px 2px 2px black;
+    box-shadow: 0px 0px 5px 2px rgba(16, 15, 15, 0.459);
+    height: auto;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+@media(width < 550px) {
+    .unutrasljost {
+        width: 450px;
+    }
+}
+
+.unutrasljost input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+}
+
+.unutrasljost input:focus {
+    border: none;
+}
+
+.unutrasljost input::placeholder {
+    color: #c2c2c2;
+    padding-left: 2px;
+}
+
+.unutrasljost label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    color: #ffffff;
+}
+
+.unutrasljost h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.unutrasljost hr {
+
+    color: #ffffff;
+    height: 5px;
+}
+
+.unutrasljost .dugmeRegister {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+
+}
+
+.unutrasljost .dugmeRegister>button {
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    width: 200px;
+    color: #fff;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+}
+
+.unutrasljost .dugmeRegister>a {
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    color: #fff;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+}
+
+.unutrasljost .dugmeRegister>button:hover,
+.unutrasljost .dugmeRegister>a:hover {
+    background-color: #1999af;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6),
+        -2px -2px 5px rgba(255, 255, 255, 0.2);
+}
+
+.upozorenje {
+    font-size: 14px;
+    font-style: italic;
+    color: #861919;
+    font-weight: bold;
+    text-shadow: 0px 0px 4px rgb(0, 0, 0);
+}
+
+.fh {
+    height: 350px;
+}
+
+.col .strana {
+    width: 200px;
+    height: 200px;
+}
+
+
+.okrvirKartice {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px
+}
+
+
+@media(width < 1200px) {
+    .okrvirKartice {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px
+    }
+}
+
+@media(width < 770px) {
+    .okrvirKartice {
+        min-width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+    }
+}
+
+.kreirajIgru {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.plusic {
+    text-align: center;
+    display: flex;
+    width: 300px;
+    height: 175px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(63, 62, 62);
+    height: 175px;
+    box-shadow: 0px 0px 10px 2px black;
+    border-radius: 7px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slikaFormat img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 7px;
+    box-shadow: 0px 0px 10px 2px black;
+    filter: brightness(90%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.slikaFormat img:hover,
+.plusic:hover {
+    transform: scale(1.08);
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 0.1px #fff;
+    filter: brightness(100%);
+}
+
+
+.opisIgre {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-shadow: 0px 2px 2px black;
+}
+
+.opisIgreTekst {
+    font-size: 20px;
+    margin: 20px 0px;
+    text-shadow: 0px 2px 2px black;
+}
+
+
+.opisIgre p:hover {
+    text-decoration: underline;
+}
+
+.opisIgre p {
+    padding: 0;
+    margin: 0;
+}
+
+.nazivIgre {
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+}
+
+.cenaIgre {
+    text-align: right;
+    font-size: 18px;
+
+}
+
+.cenaIgre span {
+    font-size: 10px;
+
+}
+
+/* ODAVNDE IDE PRED KUPOVINA CSS */
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+.okvirPrikazaVideoIgre {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+}
+
+.pozicijaElemenata {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 0px 50px;
+}
+
+.slikaPrikaz img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px black;
+    filter: brightness(100%);
+}
+
+.PozicijaDugmeta {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: none;
+    padding: 15px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.PozicijaDugmeta h2 {
+    font-size: 3rem;
+    text-shadow: 0px 0px 10px black;
+
+}
+
+.pozicijaElemenata .PozicijaDugmeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pozicijaElemenata .dugmeKupovina {
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 25px;
+    border: none;
+    padding: 20px;
+    background: linear-gradient(180deg, rgb(2 191 221) 0%, rgb(108 163 158) 100%);
+    color: white;
+    width: 300px;
+    box-shadow: 0px 0px 10px 2px black;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.pozicijaElemenata .dugmeKupovina:hover {
+    background: linear-gradient(180deg, rgb(111, 155, 202) 0%, rgb(108 157 231) 100%);
+    box-shadow: 0px 0px 3px 0.1px #fff;
+}
+
+@media(width < 1130px) {
+
+    .pozicijaElemenata {
+        min-width: 200px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .slikaPrikaz img {
+        width: 600px;
+    }
+
+    .PozicijaDugmeta {
+        width: 600px;
+    }
+
+}
+
+@media(width < 900px) {
+
+    .slikaPrikaz img {
+        width: 500px;
+    }
+
+    .PozicijaDugmeta {
+        width: 500px;
+    }
+
+    .PozicijaDugmeta h2 {
+        font-size: 2rem;
+    }
+
+    .pozicijaElemenata .dugmeKupovina {
+        padding: 10px;
+    }
+
+}
+
+@media(width < 500px) {
+
+    .slikaPrikaz img {
+        width: 400px;
+    }
+
+    .PozicijaDugmeta {
+        width: 400px;
+    }
+
+    .PozicijaDugmeta h2 {
+        font-size: 1.5rem;
+    }
+
+}
+
+/* Forma za kupovinu */
+
+.hidden {
+    display: none !important;
+}
+
+.kupovinaOkriv {
+    width: 100%;
+}
+
+.kupovinaOkriv h3 {
+    margin-bottom: 20px;
+}
+
+.podaciKupovina {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 20px;
+}
+
+.formaPozicija {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+
+.formaPozicija input {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 16px;
+    color: white;
+    outline: none;
+    box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.137),
+        inset -4px -4px 6px rgba(255, 255, 255, 0.158);
+    width: 100%;
+
+}
+
+.kvacicaZaKarticu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.kvacicaZaKarticu input {
+    margin-top: 0;
+    width: 20px;
+    background: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 16px;
+    color: white;
+    outline: none;
+    box-shadow: none;
+
+}
+
+.formaPozicija input::placeholder {
+    color: rgb(211, 207, 207);
+
+}
+
+
+.formaPozicija label {
+    align-self: flex-start;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    text-shadow: 0px 0px 10px black;
+}
+
+.formaPozicija button {
+    border: none;
+    border-radius: 7px;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 5px;
+    background: linear-gradient(180deg, rgb(2 191 221) 0%, rgb(108 163 158) 100%);
+    color: white;
+    width: 100%;
+    box-shadow: 0px 0px 10px 2px black;
+    transition: all 0.3s ease-in-out;
+}
+
+.formaPozicija button:hover {
+    background: linear-gradient(180deg, rgb(74 134 197) 0%, rgb(108 157 231) 100%);
+    box-shadow: 0px 0px 3px 0.1px #fff;
+}
+
+
+.formaPozicija .p-drugi {
+    font-size: 20px;
+    font-weight: bold;
+    align-self: flex-end;
+    text-align: left;
+    margin: 0;
+    margin-top: 20px;
+    text-shadow: 0px 0px 10px black;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+
+.navbar-toggler-icon,
+.btn-close {
+    filter: invert(1);
+}
+
+/* Korisnicki profil krece odavde */
+
+.osnovaProfila {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.sirinaOkrivira {
+    width: 1400px !important;
+    margin-top: 40px;
+}
+
+.pozadinaFrejma {
+    width: 900px;
+    min-height: 650px;
+    height: auto;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 5px 2px rgba(16, 15, 15, 0.459);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+@media(height<1000px) {
+    .pozadinaFrejma {
+        height: 300px;
+    }
+}
+
+@media(width<1400px) {
+    .sirinaOkrivira {
+        width: 900px !important;
+    }
+}
+
+/* Podaci za profil */
+
+.profil-link {
+    color: #fcfcfc;
+    font-weight: 500;
+    position: relative;
+    text-shadow: 0px 2px 2px black;
+}
+
+.podaciProfila {
+    display: grid;
+    margin-top: 10px;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    height: 250px;
+}
+
+.profilanSlika {
+    width: 200px;
+    position: relative;
+    left: 100px;
+    height: 200px;
+    top: 20px;
+    padding: 10px;
+}
+
+.profilanSlika img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px black;
+    filter: brightness(95%);
+}
+
+@media(width < 1000px) {
+    .pozadinaFrejma {
+        width: 700px;
+        height: 700px;
+    }
+
+    .podaciProfila {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 350px;
+    }
+
+    .profilanSlika {
+        position: none;
+        width: 150px;
+        top: 0px;
+        left: 0px;
+        height: 150px;
+        padding: 10px;
+    }
+}
+
+
+@media(width < 800px) {
+    .pozadinaFrejma {
+        width: 500px;
+        height: 700px;
+    }
+
+    .podaciProfila {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 350px;
+    }
+
+    .profilanSlika {
+        position: none;
+        width: 100px;
+        top: 0px;
+        left: 0px;
+        height: 100px;
+        padding: 10px;
+    }
+}
+
+.profilPodatci {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #f7f7f7;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.profilPodatci label {
+    align-self: flex-start;
+    text-align: left;
+    margin-bottom: 3px;
+    text-shadow: 0px 2px 2px black;
+}
+
+.profilPodatci p {
+    align-self: flex-start;
+    text-align: left;
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 0px 2px 2px black;
+    padding: 2px;
+    padding-left: 8px;
+    border: none;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+}
+
+
+.profilPodatci h2 {
+    text-shadow: 0px 2px 2px black;
+}
+
+/* Tabela za igre */
+
+.OkvirTabele {
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.OkvirPanel {
+    position: absolute;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 750px;
+    margin: 10px;
+    left: 70px;
+}
+
+
+.tableHader {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-shadow: 0px 2px 2px black;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.podaciTabele {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-shadow: 0px 2px 2px black;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+    overflow-y: scroll;
+    height: 200px;
+}
+
+.podaciTabele::-webkit-scrollbar {
+    display: none;
+}
+
+.tablePodaci {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    background-color: #393939;
+    font-size: 15px;
+    color: white;
+    background-color: transparent;
+    padding: 5px;
+    margin: 0;
+}
+
+.podaciTabele div {
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.jezgro {
+    height: 35px;
+    padding: 5px;
+    border-bottom: 1px solid #fff;
+}
+
+/* Ovde krece edit css */
+
+.OkvirFormeEdit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5x;
+    min-height: 550px;
+    height: auto;
+}
+
+.formaEdita {
+    height: 100%;
+    width: 100%;
+    padding: 8px;
+}
+
+.formaEdita h3 {
+    margin-top: 40px;
+    color: white;
+    text-shadow: 0px 2px 2px black;
+    text-align: center;
+}
+
+.formaEdita hr {
+    color: #fff;
+    text-shadow: 0px 2px 2px black;
+}
+
+.podaciEdita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 100px;
+}
+
+.podaciEdita input {
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 0px 2px 2px black;
+    padding: 2px;
+    padding-left: 8px;
+    border: none;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+}
+
+.podaciEdita textarea {
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 0px 2px 2px black;
+    padding: 2px;
+    padding-left: 8px;
+    border: none;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+}
+
+.podaciEdita select {
+    width: 100%;
+    border-radius: 5px;
+    color: #ffffff;
+    text-shadow: 0px 2px 2px black;
+    padding: 2px;
+    padding-left: 8px;
+    border: none;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+}
+
+.podaciEdita label {
+    align-self: flex-start;
+    text-align: left;
+    color: white;
+    text-shadow: 0px 2px 2px black;
+    margin-bottom: 3px;
+    margin-top: 5px;
+}
+
+
+.podaciEdita input::placeholder {
+    color: #c2c2c2;
+    padding-left: 2px;
+}
+
+.slikaVideoIgra {
+    width: 350px;
+    margin-top: 10px;
+    height: 200px;
+    padding: 10px;
+}
+
+.slikaVideoIgra img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px black;
+    filter: brightness(95%);
+}
+
+.podaciEdita button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    padding: 4px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.podaciEdita button:hover {
+    background-color: #1999af;
+    /* Neutralna tamnija pozadina */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6),
+        -2px -2px 5px rgba(255, 255, 255, 0.2);
+}
+
+.promenaSlike {
+    display: block;
+    padding: 8px;
+}
+
+.promenaSlike h3 {
+    margin-top: 40px;
+    color: white;
+    text-shadow: 0px 2px 2px black;
+    text-align: center;
+}
+
+.promenaSlike hr {
+    color: #fff;
+    text-shadow: 0px 2px 2px black;
+}
+
+.pozicijaPromenaSlike {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pozicijaSlike {
+    width: 200px;
+    margin-top: 10px;
+    height: 200px;
+    padding: 10px;
+}
+
+.pozicijaSlike img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px black;
+    filter: brightness(95%);
+}
+
+#slika {
+    text-align: center;
+}
+
+.custom-file-label {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    padding: 4px;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.custom-file-label:hover {
+    background-color: #1999af;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6),
+        -2px -2px 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Odavde krece css za Admin panel */
+
+.pozicioniranjeAdmin {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    height: 590px;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pozadinaFrejmaAdmin {
+    width: 1000px;
+    min-height: 680px;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 5px 2px rgba(16, 15, 15, 0.459);
+    border: none;
+    border-radius: 10px;
+}
+
+@media(width<1000px) {
+    .pozadinaFrejmaAdmin {
+        width: 700px;
+    }
+}
+
+.dodajKljuc {
+    position: absolute;
+    width: 350px;
+    min-height: 250px;
+    height: auto;
+    padding: 10px;
+    right: 920px;
+    bottom: 300px;
+    background: rgba(6, 154, 240, 0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 0px 2px 2px black;
+    color: white;
+
+}
+
+@media(width < 1645px) {
+    .dodajKljuc {
+        width: 300px;
+    }
+}
+
+@media(width < 1545px) {
+    .dodajKljuc {
+        width: 250px;
+    }
+}
+
+@media(width < 1450px) {
+    .dodajKljuc {
+        width: 250px;
+        top: 670px;
+        left: 2px
+    }
+}
+
+@media(width < 1000px) {
+    .dodajKljuc {
+        width: 250px;
+        top: 720px;
+        left: 2px
+    }
+}
+
+.dodajKljuc select {
+    width: 100%;
+    border-radius: 5px;
+    color: #ffffff;
+    text-shadow: 0px 2px 2px black;
+    padding: 2px;
+    padding-left: 8px;
+    border: none;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+}
+
+.dodajKljuc h2 {
+    font-size: 20px;
+}
+
+.dodajKljuc .por {
+    color: #108010;
+    font-size: 2rem;
+}
+
+.dodajKljuc .erro {
+    color: #7a190c;
+    font-size: 2rem;
+}
+
+.dodajKljuc .spot {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.unutrasnjiOption {
+    background-color: #444;
+    color: white;
+    max-width: 100px;
+}
+
+.unutrasnjiOption:hover {
+    background-color: #666;
+}
+
+.strelicaLevo {
+    width: 30px;
+    height: 200px;
+    position: absolute;
+    z-index: 1;
+    border: none;
+    margin-top: 80px;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6), inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2sease-in-out, box-shadow 0.2sease-in-out;
+}
+
+@media(width<1451px) {
+    .strelicaLevo {
+        width: 110px;
+        height: 30px;
+        top: 540px;
+        left: 75px;
+    }
+
+    .strelicaLevo .bi-caret-left-fill {
+        display: inline-block;
+        transform: rotate(270deg);
+    }
+}
+
+@media(width<1000px) {
+    .strelicaLevo {
+        width: 110px;
+        height: 30px;
+        top: 590px;
+        left: 75px;
+    }
+
+}
+
+.strelicaLevo:hover {
+    background-color: #1999af;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6),
+        -2px -2px 5px rgba(255, 255, 255, 0.2);
+}
+
+.strelicaLevo .bi {
+    font-size: 18px;
+}
+
+.strelicaObrisi {
+    width: 30px;
+    height: 200px;
+    position: absolute;
+    bottom: 20px;
+    z-index: 1;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6), inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2sease-in-out, box-shadow 0.2sease-in-out;
+}
+
+@media(width<1451px) {
+    .strelicaObrisi {
+        width: 110px;
+        height: 30px;
+        top: 605px;
+        left: 420px;
+    }
+
+    .strelicaObrisi .bi-caret-left-fill {
+        display: inline-block;
+        transform: rotate(270deg);
+    }
+}
+
+@media(width<1000px) {
+    .strelicaObrisi {
+        width: 110px;
+        height: 30px;
+        top: 655px;
+        left: 510px;
+    }
+
+    .strelicaObrisi .bi-caret-left-fill {
+        display: inline-block;
+        transform: rotate(270deg);
+    }
+}
+
+.strelicaObrisi .bi {
+    font-size: 18px;
+}
+
+.strelicaObrisi:hover {
+    background-color: #1999af;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6),
+        -2px -2px 5px rgba(255, 255, 255, 0.2);
+
+}
+
+.dodajKljuc label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.dodajKljuc input {
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 0px 2px 2px black;
+    padding: 2px;
+    padding-left: 8px;
+    border: none;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+}
+
+.dodajKljuc input::placeholder {
+    color: #c2c2c2;
+    padding-left: 2px;
+}
+
+.dodajKljuc button {
+    width: 200px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.dodajKljuc button:hover {
+    background-color: #1999af;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6),
+        -2px -2px 5px rgba(255, 255, 255, 0.2);
+}
+
+.potvrdaKupio {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    right: 450px;
+    top: 100px;
+    background: rgba(6, 154, 240, 0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    z-index: 9999;
+    text-shadow: 0px 2px 2px black;
+}
+
+.potvrdaKupio .por {
+    color: #108010;
+    font-size: 2rem;
+}
+
+.potvrdaKupio .spot {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+@media(width < 1400px) {
+    .potvrdaKupio {
+        width: 400px;
+        height: 200px;
+        right: 370px;
+        top: 75px;
+    }
+}
+
+@media(width < 1200px) {
+    .potvrdaKupio {
+        width: 400px;
+        height: 200px;
+        right: 270px;
+        top: 50px;
+    }
+}
+
+@media(width < 1130px) {
+    .potvrdaKupio {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        height: 200px;
+    }
+}
+
+
+@media(width < 1000px) {
+    .potvrdaKupio {
+        width: 400px;
+        height: 200px;
+        left: 740px;
+        top: 150px;
+    }
+}
+
+@media(width < 800px) {
+    .potvrdaKupio {
+        width: 350px;
+        height: 200px;
+        left: 840px;
+        top: 150px;
+    }
+}
+
+.potvradaUnosa {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 550px;
+    top: 350px;
+    background: rgba(6, 154, 240, 0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    z-index: 9999;
+    text-shadow: 0px 2px 2px black;
+}
+
+@media(width < 1000px) {
+    .potvradaUnosa {
+        width: 400px;
+        height: 200px;
+        left: 740px;
+        top: 150px;
+    }
+}
+
+@media(width < 800px) {
+    .potvradaUnosa {
+        width: 350px;
+        height: 200px;
+        left: 840px;
+        top: 150px;
+    }
+}
+
+.potvradaUnosa h2 {
+    color: #108010;
+
+}
+
+.potvradaUnosa p {
+    color: #ffffff;
+}
+
+.potrvdaBrisanjaKorisnika {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 550px;
+    bottom: 200px;
+    background: rgba(6, 154, 240, 0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    z-index: 9999;
+    text-shadow: 0px 2px 2px black;
+}
+
+@media(width < 1000px) {
+    .potrvdaBrisanjaKorisnika {
+        width: 400px;
+        height: 200px;
+        left: 740px;
+        bottom: 200px;
+    }
+}
+
+@media(width < 800px) {
+    .potrvdaBrisanjaKorisnika {
+        width: 350px;
+        height: 200px;
+        left: 840px;
+        bottom: 200px;
+    }
+}
+
+.potvradaBrisanja {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 550px;
+    bottom: 350px;
+    background: rgba(6, 154, 240, 0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    z-index: 9999;
+    text-shadow: 0px 2px 2px black;
+}
+
+@media(width < 1000px) {
+    .potvradaBrisanja {
+        width: 400px;
+        height: 200px;
+        left: 740px;
+        bottom: 200px;
+    }
+}
+
+@media(width < 800px) {
+    .potvradaBrisanja {
+        width: 350px;
+        height: 200px;
+        left: 840px;
+        bottom: 200px;
+    }
+}
+
+.potvradaEditIgre {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 550px;
+    bottom: 20px;
+    background: rgba(6, 154, 240, 0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    z-index: 9999;
+    text-shadow: 0px 2px 2px black;
+}
+
+@media(width < 1000px) {
+    .potvradaEditIgre {
+        width: 400px;
+        height: 200px;
+        left: 740px;
+        bottom: 200px;
+    }
+}
+
+@media(width < 800px) {
+    .potvradaEditIgre {
+        width: 350px;
+        height: 200px;
+        left: 840px;
+        bottom: 200px;
+    }
+}
+
+.potvradaDodavanjaKorisnika {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    right: 550px;
+    bottom: 200px;
+    background: rgba(6, 154, 240, 0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    z-index: 9999;
+    text-shadow: 0px 2px 2px black;
+}
+
+
+@media(width<1000px) {
+
+    .potvradaDodavanjaKorisnika {
+        width: 400px;
+        height: 200px;
+        right: 700px;
+        bottom: 200px;
+    }
+}
+
+@media(width<800px) {
+
+    .potvradaDodavanjaKorisnika {
+        width: 350px;
+        height: 200px;
+        right: 850px;
+        bottom: 200px;
+    }
+}
+
+.potvradaDodavanjaKorisnika .por {
+    color: #108010;
+    font-size: 2rem;
+}
+
+.potvradaDodavanjaKorisnika .spot {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.potvradaBrisanja .por {
+    color: #108010;
+    font-size: 2rem;
+}
+
+.potvradaBrisanja .spot {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.potvradaUnosaKupovine h2 {
+    color: #108010;
+}
+
+.potvradaUnosaKupovine p {
+    color: #ffffff;
+}
+
+/* Brisanje video igre */
+
+.obrisniIgru {
+    width: 350px;
+    min-height: 250px;
+    height: auto;
+    padding: 10px;
+    background: rgba(6, 154, 240, 0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 0px 2px 2px black;
+    color: white;
+}
+
+.obrisniIgru input {
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 0px 2px 2px black;
+    padding: 2px;
+    padding-left: 8px;
+    border: none;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+}
+
+.obrisniIgru input::placeholder {
+    color: #c2c2c2;
+    padding-left: 2px;
+}
+
+.obrisniIgru button {
+    width: 200px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5px;
+
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.obrisniIgru button:hover {
+    background-color: #1999af;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6),
+        -2px -2px 5px rgba(255, 255, 255, 0.2);
+
+}
+
+.obrisniIgru label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.obrisniIgru select {
+    width: 100%;
+    border-radius: 5px;
+    color: #ffffff;
+    text-shadow: 0px 2px 2px black;
+    padding: 2px;
+    padding-left: 8px;
+    border: none;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+}
+
+.tabelaManipulacijaKorisnika {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 5px;
+}
+
+.dodajKorisnika {
+    width: 100%;
+    padding: 10px;
+    bottom: 0px;
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 0px 2px 2px black;
+    color: white;
+}
+
+.dodajKorisnika input {
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 0px 2px 2px black;
+    padding: 2px;
+    padding-left: 8px;
+    border: none;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+}
+
+.dodajKorisnika textarea {
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 0px 2px 2px black;
+    padding: 2px;
+    padding-left: 8px;
+    border: none;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+}
+
+.dodajKorisnika input::placeholder {
+    color: #c2c2c2;
+    padding-left: 2px;
+}
+
+.dodajKorisnika textarea::placeholder {
+    color: #c2c2c2;
+    padding-left: 2px;
+}
+
+.dodajKorisnika h2 {
+    color: white;
+    text-shadow: 0px 2px 2px black;
+    text-align: center;
+    font-size: 20px;
+}
+
+.dodajKorisnika .por {
+    color: #108010;
+    font-size: 2rem;
+}
+
+.dodajKorisnika .spot {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.dodajKorisnika hr {
+    color: #fff;
+    text-shadow: 0px 2px 2px black;
+}
+
+.dodajKorisnika button {
+    width: 200px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5px;
+
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.dodajKorisnika button:hover {
+    background-color: #1999af;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6),
+        -2px -2px 5px rgba(255, 255, 255, 0.2);
+}
+
+.dodajKorisnika label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.dodajKorisnika select {
+    width: 100%;
+    border-radius: 5px;
+    color: #ffffff;
+    text-shadow: 0px 2px 2px black;
+    padding: 2px;
+    padding-left: 8px;
+    border: none;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+}
+
+
+
+.editObrisiKorisnika {
+    width: 100%;
+    padding: 10px;
+    bottom: 0px;
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 0px 2px 2px black;
+    color: white;
+}
+
+
+
+.editObrisiKorisnika input {
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 0px 2px 2px black;
+    padding: 2px;
+    padding-left: 8px;
+    border: none;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+}
+
+.editObrisiKorisnika input::placeholder {
+    color: #c2c2c2;
+    padding-left: 2px;
+}
+
+
+.editObrisiKorisnika h2 {
+    color: white;
+    text-shadow: 0px 2px 2px black;
+    text-align: center;
+    font-size: 20px;
+}
+
+.editObrisiKorisnika .por {
+    color: #108010;
+    font-size: 2rem;
+}
+
+.editObrisiKorisnika .spot {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+
+.editObrisiKorisnika hr {
+    color: #fff;
+    text-shadow: 0px 2px 2px black;
+}
+
+
+.editObrisiKorisnika button {
+    width: 200px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.editObrisiKorisnika button:hover {
+    background-color: #1999af;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6),
+        -2px -2px 5px rgba(255, 255, 255, 0.2);
+}
+
+.editObrisiKorisnika label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.editObrisiKorisnika select {
+    width: 100%;
+    border-radius: 5px;
+    color: #ffffff;
+    text-shadow: 0px 2px 2px black;
+    padding: 2px;
+    padding-left: 8px;
+    border: none;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+}
+
+.obrisiVideoIgru {
+    width: 100%;
+    padding: 10px;
+    bottom: 0px;
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 0px 2px 2px black;
+    color: white;
+}
+
+.obrisiVideoIgru input {
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 0px 2px 2px black;
+    padding: 2px;
+    padding-left: 8px;
+    border: none;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+}
+
+.obrisiVideoIgru input::placeholder {
+    color: #c2c2c2;
+    padding-left: 2px;
+}
+
+.obrisiVideoIgru h2 {
+    color: white;
+    text-shadow: 0px 2px 2px black;
+    text-align: center;
+    font-size: 20px;
+}
+
+.obrisiVideoIgru .por {
+    color: #108010;
+    font-size: 2rem;
+}
+
+.obrisiVideoIgru .spot {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+
+.obrisiVideoIgru hr {
+    color: #fff;
+    text-shadow: 0px 2px 2px black;
+}
+
+.obrisiVideoIgru button {
+    width: 200px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5px;
+
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.obrisiVideoIgru button:hover {
+    background-color: #1999af;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6),
+        -2px -2px 5px rgba(255, 255, 255, 0.2);
+}
+
+.obrisiVideoIgru label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.obrisiVideoIgru select {
+    width: 100%;
+    border-radius: 5px;
+    color: #ffffff;
+    text-shadow: 0px 2px 2px black;
+    padding: 2px;
+    padding-left: 8px;
+    border: none;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+}
+
+
+.dodajKljuc h2 {
+    font-size: 20px;
+}
+
+.unutrasnjiOption {
+    background-color: #444;
+    color: white;
+    max-width: 100px;
+}
+
+.unutrasnjiOption:hover {
+    background-color: #666;
+}
+
+.obrisniIgru h2 {
+    color: white;
+    text-shadow: 0px 2px 2px black;
+    text-align: center;
+    font-size: 20px;
+}
+
+.obrisniIgru hr {
+    color: #fff;
+    text-shadow: 0px 2px 2px black;
+}
+
+
+.stavIspred {
+    position: fixed;
+    z-index: 9999;
+    right: 12px;
+}
+
+.PozicijaTablaAdmin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.OkvirTabeleKorisnika {
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 750px;
+    margin: 10px;
+    left: 70px;
+}
+
+
+.OkvirTabeleIgara {
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 750px;
+    margin: 10px;
+    left: 70px;
+}
+
+.PozicijaTablaAdmin h2 {
+    text-shadow: 0px 2px 2px black;
+    margin-top: 3px;
+    color: #fff;
+    margin-bottom: 2px;
+}
+
+/* Css za nav komande admina */
+
+.admin-offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+.admin-nav-container {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.admin-nav-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.admin-nav-tabs li {
+    flex: 1 1 auto;
+    min-width: 150px;
+}
+
+.admin-nav-link {
+    display: block;
+    padding: 7px;
+    box-sizing: border-box;
+    text-align: center;
+    text-shadow: 0px 2px 2px black;
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: background 0.3s;
+    transition: border 0.3s;
+    height: 40px;
+    color: #949292;
+    font-weight: 500;
+    position: relative;
+}
+
+.admin-nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: rgb(9, 74, 172);
+    visibility: hidden;
+    transition: width 0.5s ease-in-out, visibility 0.4s ease-in-out;
+}
+
+.admin-nav-link:hover::before {
+    width: 100%;
+    visibility: visible;
+}
+
+.admin-nav-link.active,
+.admin-nav-link:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.admin-nav-link:not(:hover)::before {
+    width: 0;
+    visibility: hidden;
+}
+
+@media (max-width: 900px) {
+    .admin-nav-tabs {
+        justify-content: flex-start;
+    }
+
+    .admin-nav-tabs li:nth-child(4) {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .admin-nav-tabs li:nth-child(3) {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+
+.svetliCss {
+    color: #fcfcfc;
+    font-weight: 500;
+    text-shadow: 0px 2px 2px black;
+}
+
+footer {
+    color: white;
+    padding: 5px;
+    text-shadow: 0px 2px 2px black;
+}
+
+footer .bi {
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 0px 2px 2px black;
+}
+
+.promocija {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+
+.promocija h1 {
+    text-shadow: 0px 2px 2px black;
+    font-size: 5rem;
+    color: white;
+
+}
+
+.svgIkonice2 {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    margin: 0;
+}
+
+.dodajIgruGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+.jumbo-div {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.jumbo-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pozicijaPretrage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(0, 119, 179, 0.2);
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px 2px rgba(16, 15, 15, 0.459);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    margin-bottom: 35px;
+}
+
+.sortForma {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+}
+
+.sortForma input {
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 0px 2px 2px black;
+    padding: 10px;
+    padding-left: 8px;
+    border: none;
+    background-color: #424242;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6), inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+}
+
+.sortForma select {
+    width: 100%;
+    border-radius: 5px;
+    color: #ffffff;
+    text-shadow: 0px 2px 2px black;
+    padding: 10px;
+    border: none;
+    background-color: #424242;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+}
+
+.sortForma input:hover,select:hover {
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 119, 179, 0.2);
+}
+.sortForma input:focus, select:hover{
+    background-color: rgba(0, 119, 179, 0.2);
+}
+
+.sortForma input::placeholder {
+    color: #ffffff;
+    padding-left: 2px;
+}
+
+
+
+.sortForma button {
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: #424242;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.sortForma button:hover {
+    background-color: #1999af;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6),
+        -2px -2px 5px rgba(255, 255, 255, 0.2);
+
+}
+
+@media (width<1200px) {
+
+    .pozicijaPretrage {
+        margin-top: 20px;
+    }
+
+    .sortForma {
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .sortForma div {
+        width: 100%;
+    }
+
+    .sortForma button {
+        width: 100%;
+    }
+}
+
+.najNovijeCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    gap: 40px;
+    width: 100%;
+}
+
+
+
+.formatSlikeCard {
+    width: 450px;
+    border-radius: 10px;
+    margin: 40px 0px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 4px #00000030;
+    filter: brightness(80%);
+    transition: all 0.7s ease-in-out;
+}
+
+.formatSlikeCard img {
+    width: 400px;
+
+}
+
+.formatSlikeCard:hover {
+    transform: scale(1.08);
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 0.1px #fff;
+    filter: brightness(100%);
+    background-color: rgba(0, 119, 179, 0.2);
+}
+
+.noveIgreNaslov {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.noveIgreNaslov h5 {
+    margin-top: 10px;
+}
+
+.noveIgreNaslov p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media(width < 1510px) {
+    .najNovijeCard {
+        gap: 50px
+    }
+
+    .formatSlikeCard {
+        width: 400px;
+    }
+
+    .formatSlikeCard img {
+        width: 350px;
+
+    }
+
+}
+
+@media(width < 1370px) {
+
+    .najNovijeCard {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .formatSlikeCard {
+        width: 600px;
+        margin-bottom: 0px;
+    }
+
+    .formatSlikeCard img {
+        width: 550px;
+
+    }
+}
+
+@media(width < 680px) {
+
+    .najNovijeCard {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .formatSlikeCard {
+        width: 500px;
+        margin-bottom: 0px;
+    }
+
+    .formatSlikeCard img {
+        width: 450px;
+
+    }
+}
+
+@media(width < 570px) {
+
+
+    .formatSlikeCard {
+        width: 440px;
+        margin-bottom: 0px;
+    }
+
+    .formatSlikeCard img {
+        width: 390px;
+
+    }
+
+    .opisPoteksta {
+        width: 400px;
+        margin: 10px 0px 15px 0px;
+    }
+
+    .potekst {
+        gap: 5px;
+    }
+}
+
+.badge-novo {
+    background: linear-gradient(45deg, #2bf5ff, #605659);
+    color: white;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 150px;
+    border-radius: 8px;
+    text-shadow: 0px 2px 2px black;
+    text-align: center;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+}

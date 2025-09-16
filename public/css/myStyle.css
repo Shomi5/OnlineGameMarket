@@ -9,10 +9,6 @@ input{
     cursor: pointer;
 }
 
-label{
-    text-align: left;
-}
-
 
 main {
     background: rgb(47, 47, 47);
@@ -2581,7 +2577,6 @@ input:focus, select:focus{
 .sortForma label {
     align-self: flex-start;
     text-align: left;
-    margin-top: 10px;
     color: white;
     margin-bottom: 3px;
     text-shadow: 0px 0px 10px black;

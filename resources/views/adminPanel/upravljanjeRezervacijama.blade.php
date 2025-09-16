@@ -115,9 +115,9 @@
                                 @endif
                                 <p>Video igra: {{ $rezer->Naziv }}</p>
                                 <p>Cena video igra: {{ $rezer->Cena_Igre }} rsd</p>
-                                <p>Datum i vreme naručivanja: {{ $rezer->Datum }}</p>
+                                <p>Datum i vreme naručivanja:</br>{{ $rezer->Datum }}</p>
                                 @if ($rezer->statusRezervacija == 1)
-                                    <p>Datum obrade narudžbe: {{ $rezer->datumObrade }}</p>
+                                    <p>Datum obrade narudžbe:</br>{{ $rezer->datumObrade }}</p>
                                 @endif
 
                             </div>
@@ -162,9 +162,9 @@
                                 @endif
                                 <p>Video igra: {{ $rezer->Naziv }}</p>
                                 <p>Cena video igra: {{ $rezer->Cena_Igre }} rsd</p>
-                                <p>Datum i vreme naručivanja: {{ $rezer->Datum }}</p>
+                                <p>Datum i vreme naručivanja:</br> {{ $rezer->Datum }}</p>
                                 @if ($rezer->statusRezervacija == 1)
-                                    <p>Datum obrade narudžbe: {{ $rezer->datumObrade }}</p>
+                                    <p>Datum obrade narudžbe:</br> {{ $rezer->datumObrade }}</p>
                                 @endif
 
                             </div>

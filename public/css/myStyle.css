@@ -9,6 +9,10 @@ input{
     cursor: pointer;
 }
 
+label{
+    text-align: left;
+}
+
 
 main {
     background: rgb(47, 47, 47);
@@ -95,6 +99,7 @@ main {
 .pozicioniranje-log .ptex {
     margin: 0;
     margin-top: 10px;
+    text-align: left;
     color: #fff;
 }
 
@@ -2576,9 +2581,9 @@ input:focus, select:focus{
 .sortForma label {
     align-self: flex-start;
     text-align: left;
+    margin-top: 10px;
     color: white;
     margin-bottom: 3px;
-    margin-left: 1px;
     text-shadow: 0px 0px 10px black;
 }
 

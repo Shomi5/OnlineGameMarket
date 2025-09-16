@@ -2522,6 +2522,7 @@ footer .bi {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 20px;
     width: 100%;
 
 }
@@ -2550,10 +2551,18 @@ footer .bi {
         inset -2px -2px 1px rgba(255, 255, 255, 0.1);
 }
 
+.sortForma input, .sortForma select{
+     transition: all 0.3s ease;
+}
+
 input:hover,select:hover {
     border: none;
     cursor: pointer;
     background-color: rgba(0, 119, 179, 0.2);
+}
+
+.sortForma input:hover,.sortForma select:hover {
+    transform: scale(1.03);
 }
 input:focus, select:focus{
     background-color: rgba(0, 119, 179, 0.2);
@@ -2564,7 +2573,14 @@ input:focus, select:focus{
     padding-left: 2px;
 }
 
-
+.sortForma label {
+    align-self: flex-start;
+    text-align: left;
+    color: white;
+    margin-bottom: 3px;
+    margin-left: 1px;
+    text-shadow: 0px 0px 10px black;
+}
 
 .sortForma button {
     width: 200px;

@@ -114,19 +114,23 @@
                     <form action="{{ url((Request::segment(1) ?? 'prodaja') . '/pretraga') }}" method="GET"
                         id="formPretrazi" class="sortForma">
                         <div>
+                            <label for="">Naziv igre:</label>
                             <input type="text" name="nazivIgre" placeholder="Naziv igre..">
                         </div>
                         <div>
+                            <label for="">Maksimalna cena:</label>
                             <input type="number" name="maxCena" min="0"
                                 value="{{ request('maxCena') != null ? request('maxCena') : '' }}"
                                 placeholder="Max cena..">
                         </div>
                         <div>
+                            <label for="">Minimalna cena:</label>
                             <input type="number" name="minCena" min="0"
                                 value="{{ request('minCena') != null ? request('minCena') : '' }}"
                                 placeholder="Min cena..">
                         </div>
                         <div>
+                            <label for="">Osortiranje:</label>
                             <select name="sortCena">
                                 <option value="" class="unutrasnjiOption">Sortiraj po ceni</option>
                                 <option value="asc" class="unutrasnjiOption"
@@ -138,7 +142,8 @@
                             </select>
                         </div>
                         <div>
-                            <button type="submit" form="formPretrazi">Testiranje</button>
+                            <label for=""></label>
+                            <button type="submit" form="formPretrazi">Pretrazite</button>
                         </div>
                     </form>
                 </div>
